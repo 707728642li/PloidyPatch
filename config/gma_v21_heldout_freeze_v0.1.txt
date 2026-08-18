@@ -1,0 +1,25 @@
+# Frozen independent Glycine heldout benchmark and pre-score candidates.
+config/gma_v21_sampling_plan_v0.1.tsv
+data/public/ensembl_plants_62/glycine_max/genome/Glycine_max.Glycine_max_v2.1.dna.toplevel.fa.gz
+data/public/ensembl_plants_62/glycine_max/annotation/Glycine_max.Glycine_max_v2.1.62.gff3.gz
+data/public/ensembl_plants_62/glycine_soja/annotation/Glycine_soja.ASM419377v2.pep.all.fa.gz
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/evaluator/catalog/gma_v21_primary.annotation_missing_gene.tsv
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/evaluator/catalog/gma_v21_primary.annotation_missing_gene.tsv.manifest.json
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/evaluator/catalog/gma_v21_primary.summary.json
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/evaluator/selection/selection.tsv
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/evaluator/selection/selection.tsv.manifest.json
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/blind/perturbed.gff3
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/blind/manifest.json
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/evaluator/truth/hidden_truth.json
+results/baselines/miniprot_soybean_v0.1/reference/gso_v2.pep.fa
+results/baselines/miniprot_soybean_v0.1/reference/gso_v2.pep.fa.manifest.json
+results/baselines/miniprot_soybean_v0.1/reference/gso_v2.map.tsv
+results/baselines/miniprot_soybean_v0.1/target/gma_v21_primary.fa
+results/baselines/miniprot_soybean_v0.1/index/gma_v21_primary.mpi
+results/baselines/miniprot_soybean_v0.1/raw/miniprot.gff3
+results/baselines/miniprot_soybean_v0.1/adapted/candidate.gff3
+results/baselines/miniprot_soybean_v0.1/adapted/candidate.gff3.manifest.json
+results/baselines/miniprot_soybean_v0.1/adapted/decisions.tsv
+results/baselines/miniprot_soybean_v0.1/complete_control_v0.1/candidate.gff3
+results/baselines/miniprot_soybean_v0.1/complete_control_v0.1/candidate.gff3.manifest.json
+results/baselines/miniprot_soybean_v0.1/complete_control_v0.1/decisions.tsv

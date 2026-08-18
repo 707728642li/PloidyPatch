@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage and workflow questions
+    url: https://github.com/707728642li/PloidyPatch/discussions
+    about: Ask questions and share workflows in GitHub Discussions.
+  - name: Private contact
+    url: mailto:litaishan@caf.ac.cn
+    about: Security, institutional, or non-public communication.

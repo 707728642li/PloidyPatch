@@ -1,0 +1,81 @@
+[
+    {
+        "Id": "sha256:d4457eb7c89e25d674bb53f26b78f483ad072029e26c1dc47431737ab811bbe7",
+        "RepoTags": [
+            "ploidypatch-core:0.1.0a0-smoke-20260810"
+        ],
+        "RepoDigests": [],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-08-10T01:49:02.632171159+08:00",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "10001:10001",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+                "PYTHON_VERSION=3.11.15",
+                "PYTHON_SHA256=272179ddd9a2e41a0fc8e42e33dfbdca0b3711aa5abf372d3f2d51543d09b625",
+                "HOME=/nonexistent",
+                "PIP_DISABLE_PIP_VERSION_CHECK=1",
+                "PIP_NO_CACHE_DIR=1",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PYTHONUNBUFFERED=1"
+            ],
+            "Cmd": [
+                "--help"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/work",
+            "Entrypoint": [
+                "ploidypatch"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.description": "Review-oriented plant gene-model patch CLI",
+                "org.opencontainers.image.title": "PloidyPatch core",
+                "org.opencontainers.image.version": "0.1.0a0"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 133761776,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/data/li/software/Docker/overlay2/x65lf5v94o8wi7k5qg11rmhkz/diff:/data/li/software/Docker/overlay2/ue9tb1m3n5mum9gdqm5upwc0r/diff:/data/li/software/Docker/overlay2/koycj47i85ktn6hkdfua9cq14/diff:/data/li/software/Docker/overlay2/051087252e506902d72c90e8f95d72fc27fb28b8e40453f24d18fcd99b623f2e/diff:/data/li/software/Docker/overlay2/9cb325074d811c54269934e173e7e66b94a0fa3f127088a8f143532159c128dd/diff:/data/li/software/Docker/overlay2/056a7a00bdcfeb78402af54c4b53614c4356039a6447e5b4fae672c35887b521/diff:/data/li/software/Docker/overlay2/79a618f066cacf35550db5847cae8f501918ec05c7d3033b126d58f7da8c43d8/diff",
+                "MergedDir": "/data/li/software/Docker/overlay2/hxr8d3iaj179ey27yej0t68xf/merged",
+                "UpperDir": "/data/li/software/Docker/overlay2/hxr8d3iaj179ey27yej0t68xf/diff",
+                "WorkDir": "/data/li/software/Docker/overlay2/hxr8d3iaj179ey27yej0t68xf/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:66462cc862fe2053b9863fefa3866e07bb5dfb06f6b3ce3177cc096e4021aabe",
+                "sha256:54c5eda61868d7dbad42805ea56c87d48d0815597ddc095caddf3e72b81ebe4f",
+                "sha256:04165bb9c9967c1f86a946005f39b3173b579df051ba5e74b7c440b5a823cf77",
+                "sha256:28bcd18f93ba7019548c762541202753207f26b316a4ca5ce96bc356d8032c7f",
+                "sha256:c50a3ff583e42aa9ad39ec6bc249f968cb83373668e867b3e663864a85756bc3",
+                "sha256:2ed8b43a6ccb6234cbfa1bc6d5b03933921542d44da2bc385ea93519b6c8c688",
+                "sha256:718d0606bd051d26c23ac47722c8c91308f43d4258db404c96c1276ac7fbf573",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-08-10T01:49:02.678777816+08:00"
+        }
+    }
+]

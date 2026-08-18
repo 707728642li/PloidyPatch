@@ -1,0 +1,4 @@
+# Immutable pre-score custody record plus aggregate heldout reports.
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/evaluator/freeze/pre_score/SHA256SUMS
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/evaluator/validation/score_miniprot_gap.paired_v4.json
+benchmark/heldout/v0.1/gma_v21_annotation_missing_gene_seed20260809/evaluator/validation/score_miniprot_gap.paired_v4.stratified.json

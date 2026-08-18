@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ploidypatch"
+version = "1.0.0"
+description = "Plant duplication-aware gene-model repair and orthology reconciliation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+authors = [{name = "Taishan Li", email = "litaishan@caf.ac.cn"}]
+maintainers = [{name = "Taishan Li", email = "litaishan@caf.ac.cn"}]
+keywords = [
+  "plant genomics",
+  "genome annotation",
+  "polyploidy",
+  "whole-genome duplication",
+  "gene-model repair",
+  "synteny",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.urls]
+Homepage = "https://github.com/707728642li/PloidyPatch"
+Documentation = "https://github.com/707728642li/PloidyPatch#readme"
+Repository = "https://github.com/707728642li/PloidyPatch"
+Issues = "https://github.com/707728642li/PloidyPatch/issues"
+Changelog = "https://github.com/707728642li/PloidyPatch/blob/main/CHANGELOG.md"
+
+[project.scripts]
+ploidypatch = "ploidypatch.cli:main"
+
+[project.optional-dependencies]
+evaluation = [
+  "numpy>=1.26",
+  "scikit-learn>=1.4",
+]
+visualization = [
+  "matplotlib>=3.8",
+]
+test = [
+  "build>=1.2",
+  "matplotlib>=3.8",
+  "mypy>=1.15",
+  "numpy>=1.26",
+  "pytest>=8",
+  "pytest-cov>=6",
+  "ruff>=0.11",
+  "scikit-learn>=1.4",
+  "scipy>=1.12",
+  "twine>=5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ploidypatch = ["report_assets/*.html", "report_assets/*.css", "report_assets/*.js"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = ["src"]
+testpaths = ["tests"]

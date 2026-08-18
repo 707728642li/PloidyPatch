@@ -1,0 +1,62 @@
+* text=auto
+.gitattributes text eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.tsv text eol=lf
+*.cff text eol=lf
+*.cfg text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.txt text eol=lf
+LICENSE text eol=lf
+.github/**/*.yml text eol=lf
+.github/**/*.svg text eol=lf
+packaging/**/*.yaml text eol=lf
+examples/minimal_reviewed_patch/*.gff3 text eol=lf
+examples/minimal_reviewed_patch/*.json text eol=lf
+MANIFEST.in text eol=lf
+docs/*.json text eol=lf
+.dockerignore text eol=lf
+containers/Dockerfile text eol=lf
+docs/release_evidence/** text eol=lf
+docs/examples/report_preview/** text eol=lf
+config/**/*.json text eol=lf
+config/**/SHA256SUMS text eol=lf
+config/holdouts/coffea_et39_v1.0/no_ranker/*.json text eol=lf
+config/holdouts/coffea_et39_v1.0/no_ranker/SHA256SUMS text eol=lf
+results/** -text -diff
+manuscript/** -text -diff -eol
+manuscript/**/*.md text eol=lf
+manuscript/source_data/** -text -diff -eol
+manuscript/formatted_v0.1/*.docx -text -diff
+manuscript/formatted_v0.1/*.pdf -text -diff
+manuscript/formatted_v0.1/*.html text eol=lf
+manuscript/formatted_v0.1/*.json text eol=lf
+manuscript/formatted_v0.1/SHA256SUMS text eol=lf
+manuscript/submission_v0.1/**/*.json text eol=lf
+manuscript/submission_v0.1/SHA256SUMS text eol=lf
+manuscript/submission_v0.1/figures/*.svg -text -diff
+manuscript/formatted_submission_v0.2/** -text -diff
+manuscript/formatted_v0.3/** -text -diff
+manuscript/formatted_submission_v0.3/** -text -diff
+manuscript/submission_v0.2/** -text -diff
+manuscript/assembled_v0.2/** -text -diff
+manuscript/assembled_v0.3/** -text -diff
+manuscript/assembled_v0.4/** -text -diff
+manuscript/assembled_v0.9/** -text -diff -eol
+manuscript/formatted_v0.4/** -text -diff
+manuscript/formatted_submission_v0.4/** -text -diff
+manuscript/formatted_submission_v0.5/** -text -diff
+manuscript/formatted_submission_v0.14/** -text -diff -eol
+manuscript/formatted_supplementary_figures_v0.1/** -text -diff -eol
+manuscript/supplementary_figures_v0.1_release/** -text -diff -eol
+manuscript/submission_v0.3/** -text -diff
+manuscript/submission_v0.8/** -text -diff -eol
+manuscript/formatted_review_v0.2/** -text -diff
+manuscript/reviewer_reproducibility_v0.1/** -text -diff
+manuscript/reference_audit_v0.1/** -text -diff
+manuscript/PloidyPatch_reviewer_reproducibility_v0.1.zip -text -diff
+manuscript/PloidyPatch_reviewer_reproducibility_v0.1.zip.sha256 text eol=lf

@@ -1,0 +1,16 @@
+role	species_id	release	artifact	primary_seqid_regex	source_path
+target	Populus_trichocarpa	JGI_v4.0_annotation_v4.1	genome	^Chr(0[1-9]|1[0-9])$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t3694/Ptrichocarpa_533_v4.0.fa.gz
+target	Populus_trichocarpa	JGI_v4.0_annotation_v4.1	gff3	^Chr(0[1-9]|1[0-9])$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t3694/Ptrichocarpa_533_v4.1.gene.gff3.gz
+target	Populus_trichocarpa	JGI_v4.0_annotation_v4.1	protein		/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t3694/Ptrichocarpa_533_v4.1.protein.fa.gz
+candidate_reference	Salix_purpurea	JGI_v5.0_annotation_v5.1	genome	^Chr(0[1-9]|1[0-4]|15[WZ]|1[6-9])$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t77065/Spurpurea_519_v5.0.fa.gz
+candidate_reference	Salix_purpurea	JGI_v5.0_annotation_v5.1	gff3	^Chr(0[1-9]|1[0-4]|15[WZ]|1[6-9])$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t77065/Spurpurea_519_v5.1.gene.gff3.gz
+candidate_reference	Salix_purpurea	JGI_v5.0_annotation_v5.1	protein		/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t77065/Spurpurea_519_v5.1.protein_primaryTranscriptOnly.fa.gz
+candidate_reference	Salix_suchowensis	NCBI_GCA_017552425.1	genome	^CM029(799|80[0-9]|81[0-7])\.1$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t1278906/GCA_017552425.1_ASM1755242v1_genomic.fna.gz
+candidate_reference	Salix_suchowensis	NCBI_GCA_017552425.1	gff3	^CM029(799|80[0-9]|81[0-7])\.1$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t1278906/GCA_017552425.1_ASM1755242v1_genomic.gff.gz
+candidate_reference	Salix_suchowensis	NCBI_GCA_017552425.1	protein		/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t1278906/GCA_017552425.1_ASM1755242v1_protein.faa.gz
+evaluator_reference	Manihot_esculenta	EnsemblPlants_v42_assembly_v6	genome	^LG([1-9]|1[0-8])$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t3983/Manihot_esculenta.Manihot_esculenta_v6.dna.toplevel.fa.gz
+evaluator_reference	Manihot_esculenta	EnsemblPlants_v42_assembly_v6	gff3	^LG([1-9]|1[0-8])$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t3983/Manihot_esculenta.Manihot_esculenta_v6.42.chr.gff3.gz
+evaluator_reference	Manihot_esculenta	EnsemblPlants_v42_assembly_v6	protein		/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t3983/Manihot_esculenta.Manihot_esculenta_v6.pep.all.fa.gz
+evaluator_reference	Ricinus_communis	Wild_castor_release	genome	^Chr([1-9]|10)$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t3988/Wild_castor_genome.fa.gz
+evaluator_reference	Ricinus_communis	Wild_castor_release	gff3	^Chr([1-9]|10)$	/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t3988/Wild_castor_gene.gff3.gz
+evaluator_reference	Ricinus_communis	Wild_castor_release	protein		/nas_data/NFS/Public_genome_data/plantgarden_database/raw_data/t3988/Wild_castor_protein.fa.gz

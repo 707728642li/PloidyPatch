@@ -1,0 +1,13 @@
+transcript_count_bin	max_exons_bin	sample_count
+1	1	100
+1	2_to_5	100
+1	6_to_10	100
+1	ge_11	100
+2	1	50
+2	2_to_5	50
+2	6_to_10	50
+2	ge_11	50
+ge_3	1	50
+ge_3	2_to_5	50
+ge_3	6_to_10	50
+ge_3	ge_11	50

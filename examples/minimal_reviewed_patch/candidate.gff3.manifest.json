@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "accepted_models": 3,
+    "conflict_sets": 1,
+    "conflicted_chains": 2
+  },
+  "outputs": {
+    "candidate_gff": {
+      "sha256": "cd072d73b6552ebe24b465d9f7b5a4dc0cbf86f260a28975a2c807052349fc99"
+    },
+    "decisions": {
+      "rows": 3,
+      "sha256": "fd3c2d235c1cf6b7b1480aba96a9811e2488499b079f2c8d91266064fe2616f8"
+    }
+  },
+  "parameters": {
+    "conflict_action": "retain_all_for_ranking_and_review",
+    "max_redundancy_overlap": 0.5,
+    "min_method_support": 1,
+    "redundancy_policy": "retain_distinct_chains"
+  },
+  "schema_version": "ploidypatch.method_candidate_pool.v2"
+}

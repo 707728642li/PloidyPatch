@@ -1,0 +1,52 @@
+{
+  "schema_version": "ploidypatch.zenodo_release_record.v1",
+  "observed_at_utc": "2026-08-10T15:44:23Z",
+  "source_api": "https://zenodo.org/api/records/21875561",
+  "record": {
+    "record_id": 21875561,
+    "concept_record_id": 21875560,
+    "doi": "10.5281/zenodo.21875561",
+    "concept_doi": "10.5281/zenodo.21875560",
+    "doi_url": "https://doi.org/10.5281/zenodo.21875561",
+    "record_url": "https://zenodo.org/records/21875561",
+    "status": "published",
+    "state": "done",
+    "submitted": true,
+    "publication_date": "2026-08-10",
+    "version": "1.0.0",
+    "resource_type": "software",
+    "access_right": "open",
+    "license": "bsd-3-clause",
+    "title": "PloidyPatch",
+    "creator": {
+      "name": "Li, Taishan",
+      "affiliation": "Chinese Academy of Forestry"
+    },
+    "repository_url": "https://github.com/707728642li/PloidyPatch",
+    "identical_release_url": "https://github.com/707728642li/PloidyPatch/releases/tag/v1.0.0"
+  },
+  "doi_resolution": {
+    "http_status": 200,
+    "final_url": "https://zenodo.org/records/21875561"
+  },
+  "files": [
+    {
+      "name": "ploidypatch-1.0.0-py3-none-any.whl",
+      "bytes": 363006,
+      "zenodo_md5": "14a2226adcbef720e7349871085af18a",
+      "sha256": "6ea34db90974cb6d30ea9b71a4f981494b5a619d66b36d828892fe5621408415"
+    },
+    {
+      "name": "ploidypatch-1.0.0.tar.gz",
+      "bytes": 1439722,
+      "zenodo_md5": "8268de898785ec58e6c2dc06c37cc193",
+      "sha256": "9a65b2f752b099f87d1eddc3b75115d79ded819e54ceaf390b22c452590fbaef"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 192,
+      "zenodo_md5": "c0f45774a895c39ab833da304aad27ef",
+      "sha256": "fd04d7ab1e22f012f910920ddb84a6f19faecd6cd0438013821a074e99c8f3d8"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+include README.md
+include LICENSE
+include CITATION.cff
+include AUTHORS.md
+include CHANGELOG.md
+include CODE_OF_CONDUCT.md
+include CONTRIBUTING.md
+include SECURITY.md
+include SUPPORT.md
+include pyproject.toml
+include .dockerignore
+recursive-include config *
+recursive-include containers *
+recursive-include docs *.md *.json *.html *.tsv *.png *.svg *.pdf SHA256SUMS
+recursive-include docs/release_evidence *
+recursive-include examples *
+recursive-include packaging *.yaml *.md
+prune packaging/bioconda
+recursive-include scripts *.py *.sh
+recursive-include src/ploidypatch/report_assets *.html *.css *.js
+global-exclude __pycache__ *.py[cod]

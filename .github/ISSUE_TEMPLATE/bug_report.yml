@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a reproducible software defect
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve PloidyPatch. Do not include confidential data.
+  - type: input
+    id: version
+    attributes:
+      label: PloidyPatch version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: command-family
+    attributes:
+      label: Command family
+      options: [audit, baseline, benchmark, evidence, graph, normalize, patch, installation, other]
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior and complete error
+    validations:
+      required: true
+  - type: textarea
+    id: input-schema
+    attributes:
+      label: Minimal input schema or reproducer
+      description: Use synthetic or de-identified data only.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and Python version
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Data and safety confirmation
+      options:
+        - label: I removed credentials, private genomes, and unpublished sample metadata.
+          required: true

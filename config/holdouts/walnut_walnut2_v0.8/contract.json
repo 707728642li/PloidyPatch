@@ -1,0 +1,209 @@
+{
+  "schema_version": "ploidypatch.external_holdout_contract.v0.5",
+  "holdout_id": "walnut_walnut2_v0.8",
+  "policy_id": "ploidypatch_walnut_external_core_h1_v0.8",
+  "test_role": "untouched_confirmatory_external_species",
+  "model_version": "none_core_H1_only_v0.8",
+  "references": [
+    {
+      "role": "target",
+      "species_id": "Juglans_regia",
+      "release": "Walnut_2.0_EnsemblPlants_62",
+      "bundle_id": "target_walnut2",
+      "wgdi_prefix": "jre",
+      "primary_seqid_table": "config/primary_seqids/juglans_regia_walnut_2.0.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/Ensemble/fasta/juglans_regia/dna/Juglans_regia.Walnut_2.0.dna.toplevel.fa.gz",
+          "bytes": 174313392,
+          "sha256": "67ff7be45a1489d3c7374aa3b1587541a957aeb3d4c68793146213d6ca56cd03"
+        },
+        "gff3": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/Ensemble/gff3/juglans_regia/Juglans_regia.Walnut_2.0.62.gff3.gz",
+          "bytes": 7669562,
+          "sha256": "426c7a74d81eb76405ca1dc2c7202cb5fb700cb1a47b97c7ff0e04f364fe4433"
+        },
+        "protein": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/Ensemble/fasta/juglans_regia/pep/Juglans_regia.Walnut_2.0.pep.all.fa.gz",
+          "bytes": 12752192,
+          "sha256": "4575049fd60782fe70add0c1e3e8778c2c97193105588b94cdbd95074acf5335"
+        }
+      }
+    },
+    {
+      "role": "candidate_reference",
+      "species_id": "Juglans_mandshurica",
+      "release": "GWHBEUN00000000.1_PlantGIR",
+      "bundle_id": "candidate_mandshurica",
+      "wgdi_prefix": "jma",
+      "primary_seqid_table": "config/primary_seqids/juglans_mandshurica_gwhbeun_v1.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/plantGIR/genome/Juglans_mandshurica.genome.fa.tar.gz",
+          "bytes": 162285747,
+          "sha256": "e48000530ec3d23edf3f9d8afde27656f31d5e4bdaa65d14d5a6135767563c2c",
+          "container": {
+            "format": "tar.gz",
+            "member_name": "Juglans_mandshurica.genome.fa",
+            "member_bytes": 554212158,
+            "member_sha256": "7b1be8bfb34096526ac94bc6f1806f0257c7b31293b81590225d283f8949679f"
+          }
+        },
+        "gff3": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/plantGIR/gff3/Juglans_mandshurica.gff3",
+          "bytes": 129041311,
+          "sha256": "d5f8830d893ca170371217ccf14dd27a786fab15d8b4ac6e91350ea26f205657"
+        },
+        "protein": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/plantGIR/prot/Juglans_mandshurica.pro.fa",
+          "bytes": 15185730,
+          "sha256": "a4f3b5968e9e008d7752889b59563c65aa03e25f97b07e535fcbf91f99eae3dc"
+        }
+      }
+    },
+    {
+      "role": "candidate_reference",
+      "species_id": "Carya_illinoinensis",
+      "release": "GCF_018687715.1_NCBI_Annotation_Release_100",
+      "bundle_id": "candidate_carya",
+      "wgdi_prefix": "cil",
+      "primary_seqid_table": "config/primary_seqids/carya_illinoinensis_pawnee_v1.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/walnut_v0.8/carya_illinoinensis_pawnee_gcf_018687715_1/genomic.fna.gz",
+          "bytes": 206278473,
+          "sha256": "ad24575ce16fc060ef9f324d0629d74ff97df17b57beb62d13a3d5aa41910523"
+        },
+        "gff3": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/walnut_v0.8/carya_illinoinensis_pawnee_gcf_018687715_1/genomic.gff.gz",
+          "bytes": 13203637,
+          "sha256": "13729c1a922d5b834832fd7194621a6d01c80e57b9daeecd4599bb969abb1e0c"
+        },
+        "protein": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/walnut_v0.8/carya_illinoinensis_pawnee_gcf_018687715_1/protein.faa.gz",
+          "bytes": 9930190,
+          "sha256": "1d21ebe8215f59c326efa3a499987dc68fcb38d571602d21eef0f00c3dae30eb"
+        }
+      }
+    },
+    {
+      "role": "evaluator_reference",
+      "species_id": "Corylus_avellana",
+      "release": "CavTom2PMs-1.0_EnsemblPlants_62",
+      "bundle_id": "evaluator_corylus",
+      "wgdi_prefix": "cav",
+      "primary_seqid_table": "config/primary_seqids/corylus_avellana_cavtom2pms_1.0.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/Ensemble/fasta/corylus_avellana/dna/Corylus_avellana.CavTom2PMs-1.0.dna.toplevel.fa.gz",
+          "bytes": 109898619,
+          "sha256": "4fe6645303ef85d81635b2a939e7b1ead987ebd6daf7db3c851848f49ca281b8"
+        },
+        "gff3": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/Ensemble/gff3/corylus_avellana/Corylus_avellana.CavTom2PMs-1.0.62.gff3.gz",
+          "bytes": 5356061,
+          "sha256": "8d50f769af224db6bf327e084281675ad7be85388b91b69381a84937df3dd04b"
+        },
+        "protein": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/Ensemble/fasta/corylus_avellana/pep/Corylus_avellana.CavTom2PMs-1.0.pep.all.fa.gz",
+          "bytes": 7297408,
+          "sha256": "fe4e5c4c35b1da83b64799c7afecda7e836fc52c2cb8afde90ea777a4c925509"
+        }
+      }
+    },
+    {
+      "role": "evaluator_reference",
+      "species_id": "Castanea_mollissima",
+      "release": "GCA_053895285.1_CmollissimaNankingHAP2_v1.0",
+      "bundle_id": "evaluator_castanea",
+      "wgdi_prefix": "cmo",
+      "primary_seqid_table": "config/primary_seqids/castanea_mollissima_nanking_hap2_v1.0.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/walnut_v0.8/castanea_mollissima_nanking_hap2_gca_053895285_1/genomic.fna.gz",
+          "bytes": 220529282,
+          "sha256": "257df2c5c9a074eb5b2e72bd81cd0c9a0f7f7596d64922102fe54582e5293735"
+        },
+        "gff3": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/walnut_v0.8/castanea_mollissima_nanking_hap2_gca_053895285_1/genomic.gff.gz",
+          "bytes": 6656950,
+          "sha256": "3df6bfbce91055a4b32feb59a9b7b4068388b6b3b7da23f3ea62e53c5ca76eee"
+        },
+        "protein": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/walnut_v0.8/castanea_mollissima_nanking_hap2_gca_053895285_1/protein.faa.gz",
+          "bytes": 6606137,
+          "sha256": "15042829a524a94017d01e00f2fed0de28ec83a6f60a0bf3526812f86a15bc10"
+        }
+      }
+    }
+  ],
+  "seeds": {
+    "truth_sampler": 20260821,
+    "h1_bootstrap": 20260822
+  },
+  "target_resolved_parameters": {
+    "primary_chromosome_count": 16,
+    "minimum_target_chromosomes_fraction": 0.75,
+    "minimum_target_chromosomes": 12
+  },
+  "scientific_parameters": {
+    "protocol_profile": "core_H1_only_no_ranker",
+    "candidate_method_families": ["miniprot_0.18-r281", "GeMoMa_1.9", "LiftOn_1.0.11"],
+    "multiple_references_per_method_vote": "one_method_family_vote",
+    "candidate_topology_identity": "seqid+strand+exact_phased_CDS_chain",
+    "primary_candidate_policy": "retain_distinct_phased_CDS_chains",
+    "legacy_candidate_comparator": "suppress_strongly_overlapping_alternative_chains",
+    "adapter_min_identity": 0.5,
+    "adapter_min_query_coverage": 0.5,
+    "adapter_require_intact": true,
+    "adapter_max_existing_cds_overlap": 0.2,
+    "adapter_max_redundancy_overlap": 0.5,
+    "truth_pair_self_wgdi_min_block_pairs": 20,
+    "truth_pair_self_wgdi_require_cross_seqid": true,
+    "truth_pair_self_wgdi_require_reciprocal_unique": true,
+    "truth_pair_yn00_ks_minimum": 0.1,
+    "truth_pair_yn00_ks_maximum": 0.75,
+    "truth_pair_missing_or_out_of_range_ks": "abstain",
+    "truth_pair_outgroup_min_block_pairs": 20,
+    "truth_pair_outgroup_counterpart_multiplicity": "exactly_two_target_genes",
+    "truth_pair_outgroup_min_support_groups": 2,
+    "truth_pair_outgroup_require_cross_seqid": true,
+    "truth_pair_outgroup_require_reciprocal_unique": true,
+    "truth_pair_final_rule": "exact_unordered_pair_intersection_of_ks_filtered_self_wgdi_and_two_outgroup_support",
+    "truth_event_count": 800,
+    "minimum_formal_event_count": 500,
+    "minimum_events_per_complexity_bin": 20,
+    "complexity_bins": ["one", "two_to_three", "four_to_six", "seven_plus"],
+    "truth_removal_policy": "remove_exactly_one_deterministically_selected_partner_per_pair",
+    "truth_sampler_balance": "global_chromosome_round_robin_then_four_CDS_complexity_bins_then_sha256_rank",
+    "primary_hypothesis": "H1_retain_distinct_vs_suppress_overlap_only",
+    "h1_metric": "event_exact_phased_CDS_recall_retain_distinct_minus_suppress_overlap",
+    "h1_success_gate": "delta_gt_0_and_paired_bootstrap_CI_lower_gt_0",
+    "bootstrap_replicates": 20000,
+    "bootstrap_unit": "paired_event",
+    "bootstrap_interval": "two_sided_95pct_percentile",
+    "h2_or_topology_ranking": "forbidden",
+    "retired_ranker": "ploidypatch.stable_reference_ranker.v0.9",
+    "no_op_and_oracle_sentinels": "required",
+    "restoration_sentinel": "byte_identical_required",
+    "genome_sha256_sentinel": "identical_required",
+    "all_arm_collateral_loss_maximum": 0,
+    "automatic_copy_addition_approval": false
+  },
+  "truth_blind": {
+    "selection_by_pair_yield_candidate_count_or_model_performance": false,
+    "reference_role_change_after_freeze": false,
+    "wgd_pairs_enumerated_before_protocol_freeze": false,
+    "candidate_counts_computed_before_protocol_freeze": false,
+    "truth_labels_accessed_before_protocol_freeze": false,
+    "candidate_truth_access": false,
+    "candidate_evaluator_reference_access": false,
+    "blind_truth_mount": false,
+    "blind_complete_target_annotation_mount": false,
+    "blind_evaluator_reference_mount": false,
+    "blind_nas_data_mount": false,
+    "blind_network_access": false,
+    "complete_control_generated_after_blind_raw_prediction_freeze": true,
+    "automatic_copy_addition_approval": false
+  }
+}

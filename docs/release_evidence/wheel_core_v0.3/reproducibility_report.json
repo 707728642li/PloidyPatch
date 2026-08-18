@@ -1,0 +1,22 @@
+{
+  "canonical_sdist_policy": {
+    "archive_format": "pax",
+    "directory_mode": "0755",
+    "file_mode": "0755_if_source_executable_else_0644",
+    "gid": 0,
+    "gname": "",
+    "gzip_filename": "",
+    "gzip_level": 9,
+    "member_order": "ascending_utf8_path_bytes",
+    "mtime": "source_commit_unix_timestamp",
+    "pax_headers": "generated_only_when_required_by_tarfile",
+    "uid": 0,
+    "uname": ""
+  },
+  "independent_builds": 2,
+  "normalized_example_command_logs_identical": true,
+  "sdist_byte_identical": true,
+  "source_date_epoch": 1786321076,
+  "stable_example_outputs_identical": true,
+  "wheel_byte_identical": true
+}

@@ -1,0 +1,9 @@
+dataset_id	event_type	count	seed	split
+bna_daae	annotation_missing_internal_exon	200	20260810	development
+bna_daae	annotation_boundary_shift	200	20260810	development
+bna_daae	annotation_split_gene	200	20260810	development
+bna_daae	annotation_fused_gene	200	20260810	development
+gma_v21	annotation_missing_internal_exon	200	20260811	heldout
+gma_v21	annotation_boundary_shift	200	20260811	heldout
+gma_v21	annotation_split_gene	200	20260811	heldout
+gma_v21	annotation_fused_gene	200	20260811	heldout

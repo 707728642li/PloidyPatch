@@ -1,0 +1,8 @@
+order	criterion	frozen_rule	populus_result
+1	contamination_exclusion	target must have no prior project label access or target-specific performance inspection	pass
+2	chromosome_assembly	target primary chromosomes must cover at least 0.95 of assembly bases	pass_0.992458
+3	annotation_completeness	target must have chromosome-scale genome GFF3 and protein FASTA with deterministic exact aliases	pass
+4	wgd_identifiability	lineage-specific WGD must be supported independently of candidate references	pass_salicoid_WGD
+5	role_separation	exactly two candidate references and two evaluator-only references must be available with no species overlap	pass
+6	deterministic_efficiency	among eligible systems select smallest target assembly; never use pair yield candidate count or model performance	selected_392162179_bp
+7	failure_nonreplacement	primary failure cannot be replaced by another eligible species under v0.4	frozen

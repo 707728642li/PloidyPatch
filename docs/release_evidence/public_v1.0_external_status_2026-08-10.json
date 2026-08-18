@@ -1,0 +1,100 @@
+{
+  "schema_version": "ploidypatch.public_release_external_status.v1",
+  "observed_at_utc": "2026-08-10T14:45:55Z",
+  "sources": {
+    "repository_api": "https://api.github.com/repos/707728642li/PloidyPatch",
+    "release_api": "https://api.github.com/repos/707728642li/PloidyPatch/releases/tags/v1.0.0",
+    "upstream_actions_api": "https://api.github.com/repos/707728642li/PloidyPatch/actions/runs",
+    "bioconda_pull_request_api": "https://api.github.com/repos/bioconda/bioconda-recipes/pulls/68021",
+    "bioconda_checks_api": "https://api.github.com/repos/bioconda/bioconda-recipes/commits/52a258f9350b4811761a75e2fc0a35d3871e8365/check-runs"
+  },
+  "repository": {
+    "full_name": "707728642li/PloidyPatch",
+    "private": false,
+    "default_branch": "main",
+    "default_branch_head_sha": "ad8b4b907735905965dab330525f03ae95559dbe",
+    "license_spdx": "BSD-3-Clause",
+    "url": "https://github.com/707728642li/PloidyPatch"
+  },
+  "release": {
+    "tag": "v1.0.0",
+    "name": "PloidyPatch v1.0.0",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-08-10T11:37:29Z",
+    "url": "https://github.com/707728642li/PloidyPatch/releases/tag/v1.0.0",
+    "assets": [
+      {
+        "name": "ploidypatch-1.0.0-py3-none-any.whl",
+        "bytes": 363006,
+        "sha256": "6ea34db90974cb6d30ea9b71a4f981494b5a619d66b36d828892fe5621408415"
+      },
+      {
+        "name": "ploidypatch-1.0.0.tar.gz",
+        "bytes": 1439722,
+        "sha256": "9a65b2f752b099f87d1eddc3b75115d79ded819e54ceaf390b22c452590fbaef"
+      },
+      {
+        "name": "SHA256SUMS",
+        "bytes": 192,
+        "sha256": "fd04d7ab1e22f012f910920ddb84a6f19faecd6cd0438013821a074e99c8f3d8"
+      }
+    ]
+  },
+  "upstream_ci": {
+    "head_sha": "ad8b4b907735905965dab330525f03ae95559dbe",
+    "checks": [
+      {
+        "name": "test",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/707728642li/PloidyPatch/actions/runs/31389663471"
+      },
+      {
+        "name": "codeql",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/707728642li/PloidyPatch/actions/runs/31389663486"
+      }
+    ]
+  },
+  "bioconda": {
+    "pull_request": 68021,
+    "url": "https://github.com/bioconda/bioconda-recipes/pull/68021",
+    "state": "open",
+    "draft": false,
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "head_sha": "52a258f9350b4811761a75e2fc0a35d3871e8365",
+    "label": "please review & merge",
+    "review_count": 0,
+    "actionable_review_comments": 0,
+    "checks": [
+      {
+        "name": "OSX-64 Tests",
+        "conclusion": "success"
+      },
+      {
+        "name": "Linux Tests",
+        "conclusion": "success"
+      },
+      {
+        "name": "Summary",
+        "conclusion": "success"
+      },
+      {
+        "name": "Lint",
+        "conclusion": "success"
+      },
+      {
+        "name": "build and test (ARM)",
+        "conclusion": "success"
+      },
+      {
+        "name": "Mergify Merge Queue",
+        "conclusion": "neutral"
+      }
+    ],
+    "installability_claim": "pending_merge"
+  }
+}

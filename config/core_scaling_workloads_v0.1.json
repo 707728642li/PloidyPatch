@@ -1,0 +1,147 @@
+{
+  "model_v03": "results/models/ploidypatch_ranker_v0.4/model_v0.3.json",
+  "schema_version": "ploidypatch.core_scaling_config.v1",
+  "workloads": [
+    {
+      "annotation_gff": "data/derived/syngap_glycine_v0.1/gma_complete/primary_chromosomes.gff3",
+      "annotation_release": "Ensembl Plants release 62",
+      "assembly": "Glycine_max_v2.1 (Wm82.a2.v1)",
+      "base_gff": "benchmark/structure/copy_collapse_v0.1/gma_v21/annotation_copy_collapse_seed20260815/blind/perturbed.gff3",
+      "canonical_feature_root": "results/copy_collapse/candidate_pool_v0.3_features/glycine",
+      "canonical_pool_root": "results/copy_collapse/candidate_pool_v0.3/glycine/blind",
+      "genome_fasta": "data/derived/syngap_glycine_v0.1/gma_complete/primary_chromosomes.genome.fa",
+      "method_candidate_gffs": {
+        "gemoma": "results/copy_collapse/gemoma_glycine_v0.1/blind/candidate.gff3",
+        "lifton": "results/copy_collapse/lifton_glycine_v0.1/blind/candidate.gff3",
+        "miniprot": "results/copy_collapse/miniprot_glycine_v0.1/blind/candidate.gff3"
+      },
+      "method_decisions": {
+        "gemoma": "results/copy_collapse/gemoma_glycine_v0.1/blind/decisions.tsv",
+        "lifton": "results/copy_collapse/lifton_glycine_v0.1/blind/decisions.tsv",
+        "miniprot": "results/copy_collapse/miniprot_glycine_v0.1/blind/decisions.tsv"
+      },
+      "prior_wgd_selection": "results/copy_collapse/wgd_reanchor_union_glycine_dev_v0.1/self_wgdi/blind/selected/selection.tsv",
+      "species": "Glycine max",
+      "split_role": "development_labels_previously_seen",
+      "workload_id": "glycine_wm82a2"
+    },
+    {
+      "annotation_gff": "data/derived/normalized_bundles/v0.1/bna_daae_primary/primary_chromosomes.gff3",
+      "annotation_release": "NCBI Annotation Release 102",
+      "assembly": "GCF_020379485.1 (Da-Ae)",
+      "base_gff": "benchmark/structure/copy_collapse_v0.1/bna_daae/annotation_copy_collapse_seed20260814/blind/perturbed.gff3",
+      "canonical_feature_root": "results/copy_collapse/candidate_pool_v0.3_features/brassica",
+      "canonical_pool_root": "results/copy_collapse/candidate_pool_v0.3/brassica/blind",
+      "genome_fasta": "data/derived/normalized_bundles/v0.1/bna_daae_primary/primary_chromosomes.genome.fa",
+      "method_candidate_gffs": {
+        "gemoma": "results/copy_collapse/model_development/brassica_method_trio_v0.1/methods/gemoma/blind/candidate.gff3",
+        "lifton": "results/copy_collapse/model_development/brassica_method_trio_v0.1/methods/lifton/blind/candidate.gff3",
+        "miniprot": "results/copy_collapse/miniprot_brassica_v0.1/blind/candidate.gff3"
+      },
+      "method_decisions": {
+        "gemoma": "results/copy_collapse/model_development/brassica_method_trio_v0.1/methods/gemoma/blind/decisions.tsv",
+        "lifton": "results/copy_collapse/model_development/brassica_method_trio_v0.1/methods/lifton/blind/decisions.tsv",
+        "miniprot": "results/copy_collapse/miniprot_brassica_v0.1/blind/decisions.tsv"
+      },
+      "prior_wgd_selection": "results/copy_collapse/model_development/brassica_union_self_wgd_v0.1/blind/selected/selection.tsv",
+      "species": "Brassica napus",
+      "split_role": "development_labels_previously_seen",
+      "workload_id": "brassica_daae"
+    },
+    {
+      "annotation_gff": "data/derived/holdout_inputs/cotton_v0.1/hirsutum/primary_chromosomes.gff3",
+      "annotation_release": "PGCP v2.4.5 annotation",
+      "assembly": "PGCP G. hirsutum v2.4.5",
+      "base_gff": "benchmark/structure/copy_collapse_v0.1/ghi_ad/annotation_copy_collapse_seed20260817/blind/perturbed.gff3",
+      "canonical_feature_root": "results/copy_collapse/candidate_pool_v0.3_features/cotton",
+      "canonical_pool_root": "results/copy_collapse/candidate_pool_v0.3/cotton/blind",
+      "genome_fasta": "data/derived/holdout_inputs/cotton_v0.1/hirsutum/primary_chromosomes.genome.fa",
+      "method_candidate_gffs": {
+        "gemoma": "results/copy_collapse/holdout/cotton_method_trio_v0.1/methods/gemoma/blind/candidate.gff3",
+        "lifton": "results/copy_collapse/holdout/cotton_method_trio_v0.1/methods/lifton/blind/candidate.gff3",
+        "miniprot": "results/copy_collapse/holdout/cotton_method_trio_v0.1/methods/miniprot/blind/candidate.gff3"
+      },
+      "method_decisions": {
+        "gemoma": "results/copy_collapse/holdout/cotton_method_trio_v0.1/methods/gemoma/blind/decisions.tsv",
+        "lifton": "results/copy_collapse/holdout/cotton_method_trio_v0.1/methods/lifton/blind/decisions.tsv",
+        "miniprot": "results/copy_collapse/holdout/cotton_method_trio_v0.1/methods/miniprot/blind/decisions.tsv"
+      },
+      "prior_wgd_selection": "results/copy_collapse/holdout/cotton_union_self_wgd_v0.1/blind/selected/selection.tsv",
+      "species": "Gossypium hirsutum",
+      "split_role": "retrospective_diagnostic_labels_previously_seen",
+      "workload_id": "cotton_nau"
+    },
+    {
+      "annotation_gff": "data/derived/holdout_inputs/maize_v2/zea_mays/primary_chromosomes.gff3",
+      "annotation_release": "Zm00001eb.1 / Ensembl Plants release 62",
+      "assembly": "Zm-B73-REFERENCE-NAM-5.0",
+      "base_gff": "benchmark/structure/copy_collapse_v0.2/zma_maize1/annotation_copy_collapse_seed20260829/blind/perturbed.gff3",
+      "canonical_feature_root": "results/copy_collapse/candidate_pool_v0.3_features/maize",
+      "canonical_pool_root": "results/copy_collapse/candidate_pool_v0.3/maize/blind",
+      "genome_fasta": "data/derived/holdout_inputs/maize_v2/zea_mays/primary_chromosomes.genome.fa",
+      "method_candidate_gffs": {
+        "gemoma": "results/copy_collapse/holdout/maize_v2_method_trio/methods/gemoma/blind/candidate.gff3",
+        "lifton": "results/copy_collapse/holdout/maize_v2_method_trio/methods/lifton/blind/candidate.gff3",
+        "miniprot": "results/copy_collapse/holdout/maize_v2_method_trio/methods/miniprot/blind/candidate.gff3"
+      },
+      "method_decisions": {
+        "gemoma": "results/copy_collapse/holdout/maize_v2_method_trio/methods/gemoma/blind/decisions.tsv",
+        "lifton": "results/copy_collapse/holdout/maize_v2_method_trio/methods/lifton/blind/decisions.tsv",
+        "miniprot": "results/copy_collapse/holdout/maize_v2_method_trio/methods/miniprot/blind/decisions.tsv"
+      },
+      "prior_wgd_selection": "results/copy_collapse/holdout/maize_v2_union_self_wgd/blind/selected/selection.tsv",
+      "species": "Zea mays",
+      "split_role": "posthoc_formal_holdout_diagnostic_no_selection",
+      "workload_id": "maize_nam5"
+    },
+    {
+      "annotation_gff": "data/derived/external_inputs/apple_v0.3/target_apple/primary_chromosomes.gff3",
+      "annotation_release": "GDDH13 v1.1 annotation",
+      "assembly": "GDDH13 v1.1",
+      "base_gff": "benchmark/structure/copy_collapse_v0.3/mdx_gddh13/annotation_copy_collapse_seed20260831/blind/perturbed.gff3",
+      "canonical_feature_root": "results/copy_collapse/external/apple_v0.3_blind_rankings/features",
+      "canonical_pool_root": "results/copy_collapse/external/apple_v0.3_method_trio/consensus/primary_union/blind",
+      "canonical_v03_root": "results/copy_collapse/external/apple_v0.3_blind_rankings/scores",
+      "genome_fasta": "data/derived/external_inputs/apple_v0.3/target_apple/primary_chromosomes.genome.fa",
+      "method_candidate_gffs": {
+        "gemoma": "results/copy_collapse/external/apple_v0.3_method_trio/methods/gemoma/blind/candidate.gff3",
+        "lifton": "results/copy_collapse/external/apple_v0.3_method_trio/methods/lifton/blind/candidate.gff3",
+        "miniprot": "results/copy_collapse/external/apple_v0.3_method_trio/methods/miniprot/blind/candidate.gff3"
+      },
+      "method_decisions": {
+        "gemoma": "results/copy_collapse/external/apple_v0.3_method_trio/methods/gemoma/blind/decisions.tsv",
+        "lifton": "results/copy_collapse/external/apple_v0.3_method_trio/methods/lifton/blind/decisions.tsv",
+        "miniprot": "results/copy_collapse/external/apple_v0.3_method_trio/methods/miniprot/blind/decisions.tsv"
+      },
+      "prior_wgd_selection": "results/copy_collapse/external/apple_v0.3_blind_self_wgd/selected/selection.tsv",
+      "species": "Malus domestica",
+      "split_role": "untouched_external_v0.3_labels_now_seen",
+      "workload_id": "apple_gddh13"
+    },
+    {
+      "annotation_gff": "data/derived/external_inputs/populus_v0.4/normalized/target_populus/primary_chromosomes.gff3",
+      "annotation_release": "JGI v4.1 annotation",
+      "assembly": "P. trichocarpa JGI v4.0",
+      "base_gff": "benchmark/structure/copy_collapse_v0.4/ptr_v4/annotation_copy_collapse_seed20260930/blind/perturbed.gff3",
+      "canonical_feature_root": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_blind_rankings/features",
+      "canonical_pool_root": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_method_trio/consensus/primary_union/blind",
+      "canonical_v03_root": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_blind_rankings/scores",
+      "canonical_v04_root": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_blind_rankings/scores",
+      "genome_fasta": "results/blind_runs/populus_external_v0.4/project/results/baselines/populus_v0.4/miniprot/normalized/target/primary_chromosomes.genome.fa",
+      "method_candidate_gffs": {
+        "gemoma": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_method_trio/methods/gemoma/blind/candidate.gff3",
+        "lifton": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_method_trio/methods/lifton/blind/candidate.gff3",
+        "miniprot": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_method_trio/methods/miniprot/blind/candidate.gff3"
+      },
+      "method_decisions": {
+        "gemoma": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_method_trio/methods/gemoma/blind/decisions.tsv",
+        "lifton": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_method_trio/methods/lifton/blind/decisions.tsv",
+        "miniprot": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_method_trio/methods/miniprot/blind/decisions.tsv"
+      },
+      "prior_wgd_selection": "results/blind_runs/populus_external_v0.4/project/results/copy_collapse/external/populus_v0.4_blind_self_wgd/selected/selection.tsv",
+      "species": "Populus trichocarpa",
+      "split_role": "untouched_confirmatory_external_v0.4_labels_now_seen",
+      "workload_id": "populus_jgi4"
+    }
+  ]
+}

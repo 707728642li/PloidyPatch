@@ -1,0 +1,8 @@
+name: ploidypatch-dev
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11,<3.14
+  - pip>=24
+  - pip:
+      - -e .[test]

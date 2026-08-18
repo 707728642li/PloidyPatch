@@ -1,0 +1,9 @@
+dataset_id	event_type	count	seed	split
+ath_tair10	annotation_missing_internal_exon	200	20260812	development
+ath_tair10	annotation_boundary_shift	200	20260812	development
+ath_tair10	annotation_split_gene	200	20260812	development
+ath_tair10	annotation_fused_gene	200	20260812	development
+osa_irgsp10	annotation_missing_internal_exon	200	20260813	heldout
+osa_irgsp10	annotation_boundary_shift	200	20260813	heldout
+osa_irgsp10	annotation_split_gene	200	20260813	heldout
+osa_irgsp10	annotation_fused_gene	200	20260813	heldout
