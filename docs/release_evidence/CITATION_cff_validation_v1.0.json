@@ -1,0 +1,38 @@
+{
+  "schema_version": "ploidypatch.citation_cff_validation.v1",
+  "validated_at_utc": "2026-08-10T14:56:00Z",
+  "source": {
+    "relative_path": "CITATION.cff",
+    "bytes": 812,
+    "sha256": "0cb23394a885839bc0ddb2db2af672ef2d413c5db68128a15f36db9b89a6ebcd"
+  },
+  "validator": {
+    "name": "cffconvert",
+    "version": "2.0.0",
+    "cff_schema_version": "1.2.0",
+    "valid": true
+  },
+  "zenodo_conversion": {
+    "creators": [
+      {
+        "affiliation": "Chinese Academy of Forestry",
+        "name": "Li, Taishan"
+      }
+    ],
+    "description": "PloidyPatch is a duplication-aware, review-oriented toolkit for preserving, ranking, and applying structurally distinct plant gene-model repair candidates as auditable and reversible annotation patches.",
+    "keywords": [
+      "plant genomics",
+      "genome annotation",
+      "polyploidy",
+      "whole-genome duplication",
+      "gene-model repair",
+      "synteny"
+    ],
+    "license": {
+      "id": "BSD-3-Clause"
+    },
+    "publication_date": "2026-08-10",
+    "title": "PloidyPatch",
+    "version": "1.0.0"
+  }
+}

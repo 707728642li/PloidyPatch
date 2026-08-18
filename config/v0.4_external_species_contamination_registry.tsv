@@ -1,0 +1,19 @@
+species_id	project_status	target_eligibility	rationale
+Glycine_max	label_seen_development	ineligible	development labels and ranker training
+Glycine_soja	reference_seen	ineligible	candidate/evidence reference in soybean work
+Brassica_napus	label_seen_development	ineligible	development labels and ranker training
+Brassica_rapa	reference_seen	ineligible	candidate/evidence reference in Brassica work
+Brassica_oleracea	reference_seen	ineligible	candidate/evidence reference in Brassica work
+Gossypium_hirsutum	label_seen_retrospective	ineligible	retrospective external labels already viewed
+Zea_mays	label_seen_retrospective_and_natural	ineligible	retrospective labels and natural validation already viewed
+Malus_domestica	label_seen_external_development	ineligible	v0.3 external labels already revealed
+Arabidopsis_thaliana	structure_development_seen	ineligible	used during structural method development
+Oryza_sativa	structure_development_seen	ineligible	used during structural method development
+Arachis_hypogaea	explicitly_considered_and_deferred	ineligible	cannot be represented as untouched after prior protocol consideration
+Populus_trichocarpa	no_project_target_or_label_hit	eligible_primary	metadata-only audit found no project use; selected deterministically
+Actinidia_chinensis	no_project_target_or_label_hit	eligible_secondary	predeclared secondary replication only; cannot replace failed primary
+Helianthus_annuus	no_project_target_or_label_hit	eligible_scale_stress	repeat-rich scale stress only; cannot replace failed primary
+Salix_purpurea	reserved_candidate_reference	not_a_target	candidate generation only for Populus
+Salix_suchowensis	reserved_candidate_reference	not_a_target	candidate generation only for Populus
+Manihot_esculenta	reserved_evaluator_reference	not_a_target	evaluator truth support only for Populus
+Ricinus_communis	reserved_evaluator_reference	not_a_target	evaluator truth support only for Populus

@@ -1,0 +1,4 @@
+candidate_digest	review_decision	reviewer	reviewed_at_utc	rationale
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa	accept_addition	example-review-team	2026-08-09T00:00:00Z	Selected exact chain from the mutually exclusive conflict set
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc	accept_addition	example-review-team	2026-08-09T00:02:00Z	Accepted independent non-conflicting chain
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb	reject	example-review-team	2026-08-09T00:01:00Z	Rejected alternative chain from the same conflict set

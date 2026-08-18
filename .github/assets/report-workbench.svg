@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+  <title id="title">PloidyPatch interactive evidence report</title>
+  <desc id="desc">A polished interface preview showing decision state, triage metrics, exact method intersections, a candidate table, and shared-axis gene structures.</desc>
+  <defs>
+    <linearGradient id="hero" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0d2f4e"/><stop offset="0.58" stop-color="#15577d"/><stop offset="1" stop-color="#148f91"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" x2="1"><stop stop-color="#2c78b8"/><stop offset="1" stop-color="#18a7a0"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#123b61" flood-opacity="0.12"/></filter>
+    <style>
+      .ui{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#132338}.muted{fill:#607086}.caps{font-size:10px;font-weight:700;letter-spacing:1.6px}.h1{font-size:30px;font-weight:750}.h2{font-size:16px;font-weight:700}.small{font-size:11px}.body{font-size:12px}.value{font-size:26px;font-weight:750}.mono{font-family:Consolas,monospace;font-size:10px}.card{fill:#fff;stroke:#dce4ec}.track{fill:#eaf0f5}.phase0{fill:#277b62}.phase1{fill:#d5972b}.phase2{fill:#7a5ea8}
+    </style>
+  </defs>
+  <rect width="1440" height="820" fill="#f5f8fb"/>
+  <rect width="1440" height="164" fill="url(#hero)"/>
+  <g transform="translate(84 32)" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect width="30" height="30" rx="7" fill="none" stroke="#80ddd4" stroke-width="2"/><text x="15" y="21" text-anchor="middle" font-size="15" font-weight="800">PP</text>
+    <text x="43" y="20" font-size="11" font-weight="700" letter-spacing="1.5">PLOIDYPATCH EVIDENCE REPORT</text>
+    <text x="0" y="74" class="h1" fill="#fff">Minimal reviewed patch</text>
+    <text x="0" y="101" font-size="13" fill="#d7edf2">Duplication-aware candidate preservation · human review · reversible annotation patching</text>
+    <g transform="translate(0 118)" font-size="10"><rect width="102" height="24" rx="12" fill="none" stroke="#ffffff55"/><text x="51" y="16" text-anchor="middle">REPORT SCHEMA V1</text><rect x="112" width="106" height="24" rx="12" fill="none" stroke="#ffffff55"/><text x="165" y="16" text-anchor="middle">OFFLINE · SEALED</text></g>
+  </g>
+
+  <g filter="url(#shadow)" class="ui">
+    <g transform="translate(84 142)"><rect width="1272" height="74" rx="13" class="card"/><rect width="5" height="74" rx="3" fill="#277b62"/><text x="24" y="25" class="caps" fill="#2c78b8">CURRENT DECISION STATE</text><text x="24" y="51" class="h2">Review complete and byte-identical reversion verified</text><rect x="1074" y="21" width="174" height="31" rx="16" fill="#e8f4ef"/><text x="1161" y="41" text-anchor="middle" class="caps" fill="#277b62">VALIDATED REVERSIBLE RUN</text></g>
+    <g transform="translate(84 232)">
+      <g><rect width="300" height="88" rx="13" class="card"/><text x="18" y="25" class="small muted">Candidates</text><text x="18" y="59" class="value">3</text><text x="280" y="59" text-anchor="end" class="small muted">1 conflict set</text></g>
+      <g transform="translate(324)"><rect width="300" height="88" rx="13" class="card"/><text x="18" y="25" class="small muted">Reviewed</text><text x="18" y="59" class="value">3</text><text x="280" y="59" text-anchor="end" class="small" fill="#277b62">100.0%</text></g>
+      <g transform="translate(648)"><rect width="300" height="88" rx="13" class="card"/><text x="18" y="25" class="small muted">Accepted additions</text><text x="18" y="59" class="value">2</text><text x="280" y="59" text-anchor="end" class="small muted">2 patch events</text></g>
+      <g transform="translate(972)"><rect width="300" height="88" rx="13" class="card"/><text x="18" y="25" class="small muted">Topology available</text><text x="18" y="59" class="value">2</text><text x="280" y="59" text-anchor="end" class="small muted">optional evidence</text></g>
+    </g>
+  </g>
+
+  <g transform="translate(84 344)" class="ui">
+    <g filter="url(#shadow)"><rect width="406" height="194" rx="14" class="card"/></g>
+    <text x="20" y="27" class="caps" fill="#2c78b8">WHERE TO START</text><text x="20" y="53" class="h2">Suggested inspection order</text>
+    <g transform="translate(20 72)"><rect width="366" height="29" rx="7" fill="#f4f7fa"/><circle cx="16" cy="14.5" r="7" fill="#2c78b8"/><text x="16" y="18" text-anchor="middle" font-size="9" fill="#fff">1</text><text x="34" y="19" class="body">Unresolved conflict · PPCONS_gene_a</text><text x="348" y="19" text-anchor="end" class="small muted">#1</text></g>
+    <g transform="translate(20 108)"><rect width="366" height="29" rx="7" fill="#f4f7fa"/><circle cx="16" cy="14.5" r="7" fill="#18a7a0"/><text x="16" y="18" text-anchor="middle" font-size="9" fill="#fff">2</text><text x="34" y="19" class="body">Accepted singleton · PPCONS_gene_c</text><text x="348" y="19" text-anchor="end" class="small muted">#2</text></g>
+    <g transform="translate(20 144)"><rect width="366" height="29" rx="7" fill="#f4f7fa"/><circle cx="16" cy="14.5" r="7" fill="#d5972b"/><text x="16" y="18" text-anchor="middle" font-size="9" fill="#fff">3</text><text x="34" y="19" class="body">Rejected alternative · PPCONS_gene_b</text><text x="348" y="19" text-anchor="end" class="small muted">#3</text></g>
+
+    <g transform="translate(430)"><g filter="url(#shadow)"><rect width="406" height="194" rx="14" class="card"/></g><text x="20" y="27" class="caps" fill="#2c78b8">EXACT OVERLAP</text><text x="20" y="53" class="h2">Projection-method intersections</text>
+      <g transform="translate(20 78)" class="small"><circle cx="9" cy="8" r="6" fill="#2c78b8"/><circle cx="27" cy="8" r="6" fill="#2c78b8"/><circle cx="45" cy="8" r="6" fill="#2c78b8"/><rect x="66" width="254" height="16" rx="4" class="track"/><rect x="66" width="254" height="16" rx="4" fill="url(#bar)"/><text x="361" y="12" text-anchor="end">1</text></g>
+      <g transform="translate(20 113)" class="small"><circle cx="9" cy="8" r="6" fill="#fff" stroke="#a8b6c3" stroke-width="2"/><circle cx="27" cy="8" r="6" fill="#2c78b8"/><circle cx="45" cy="8" r="6" fill="#2c78b8"/><rect x="66" width="254" height="16" rx="4" class="track"/><rect x="66" width="254" height="16" rx="4" fill="url(#bar)"/><text x="361" y="12" text-anchor="end">1</text></g>
+      <g transform="translate(20 148)" class="small"><circle cx="9" cy="8" r="6" fill="#2c78b8"/><circle cx="27" cy="8" r="6" fill="#fff" stroke="#a8b6c3" stroke-width="2"/><circle cx="45" cy="8" r="6" fill="#2c78b8"/><rect x="66" width="254" height="16" rx="4" class="track"/><rect x="66" width="254" height="16" rx="4" fill="url(#bar)"/><text x="361" y="12" text-anchor="end">1</text></g>
+    </g>
+
+    <g transform="translate(860)"><g filter="url(#shadow)"><rect width="412" height="194" rx="14" class="card"/></g><text x="20" y="27" class="caps" fill="#2c78b8">INTERPRETATION</text><text x="20" y="53" class="h2">Evidence, never automatic approval</text><rect x="20" y="73" width="372" height="42" rx="8" fill="#eef8f4" stroke="#277b62"/><text x="34" y="91" class="small" font-weight="700" fill="#277b62">PASS · Review coverage</text><text x="34" y="107" class="small muted">All candidates have explicit decisions.</text><rect x="20" y="124" width="372" height="50" rx="8" fill="#f4f7fa" stroke="#2c78b8"/><text x="34" y="143" class="small" font-weight="700" fill="#2c78b8">INFO · Decision boundary</text><text x="34" y="160" class="small muted">Scores prioritize inspection; no candidate is auto-approved.</text></g>
+  </g>
+
+  <g transform="translate(84 562)" class="ui">
+    <g filter="url(#shadow)"><rect width="780" height="214" rx="14" class="card"/></g><text x="20" y="29" class="caps" fill="#2c78b8">REVIEW WORKSPACE</text><text x="20" y="55" class="h2">Candidate explorer</text><rect x="20" y="70" width="740" height="30" rx="7" fill="#edf3f7"/><text x="34" y="90" class="small muted">CANDIDATE</text><text x="270" y="90" class="small muted">LOCUS</text><text x="430" y="90" class="small muted">SUPPORT</text><text x="565" y="90" class="small muted">PRIORITY</text><text x="692" y="90" class="small muted">DECISION</text>
+    <g transform="translate(20 100)"><rect width="740" height="45" fill="#e6f2f8"/><rect width="4" height="45" fill="#2c78b8"/><text x="14" y="18" class="body" font-weight="700">PPCONS_gene_a</text><text x="14" y="34" class="mono muted">aaaaaaaaaaaa…</text><text x="250" y="27" class="body">chr2:101–190 (+)</text><text x="410" y="27" class="small">3 methods</text><text x="545" y="20" class="body" font-weight="700">#1 of 3</text><text x="545" y="35" class="small muted">top 1 percent</text><text x="672" y="27" class="small" fill="#277b62" font-weight="700">ACCEPT</text></g>
+    <g transform="translate(20 145)"><line x2="740" stroke="#dce4ec"/><text x="14" y="27" class="body" font-weight="700">PPCONS_gene_c</text><text x="250" y="27" class="body">chr3:301–390 (−)</text><text x="410" y="27" class="small">2 methods</text><text x="545" y="27" class="body">#2 of 3</text><text x="672" y="27" class="small" fill="#277b62" font-weight="700">ACCEPT</text></g>
+    <g transform="translate(20 182)"><line x2="740" stroke="#dce4ec"/><text x="14" y="24" class="body" font-weight="700">PPCONS_gene_b</text><text x="250" y="24" class="body">chr2:151–240 (+)</text><text x="410" y="24" class="small">2 methods</text><text x="545" y="24" class="body">#3 of 3</text><text x="672" y="24" class="small" fill="#ba4d55" font-weight="700">REJECT</text></g>
+
+    <g transform="translate(884)"><g filter="url(#shadow)"><rect width="388" height="214" rx="14" class="card"/></g><text x="20" y="29" class="caps" fill="#2c78b8">SHARED-AXIS COMPARISON</text><text x="20" y="55" class="h2">Mutually exclusive CDS chains</text><text x="20" y="80" class="small muted">PPCONS_gene_a · selected</text><line x1="24" x2="360" y1="105" y2="105" stroke="#9bacba" stroke-width="2"/><rect x="24" y="92" width="152" height="26" rx="3" class="phase0"/><path d="M360 105l-12-7v14z" fill="#607086"/><text x="20" y="141" class="small muted">PPCONS_gene_b · alternative</text><line x1="24" x2="360" y1="166" y2="166" stroke="#9bacba" stroke-width="2"/><rect x="176" y="153" width="184" height="26" rx="3" class="phase1"/><path d="M360 166l-12-7v14z" fill="#607086"/><text x="20" y="198" class="small muted">Boundary displacement 100 bp · phase-aware · reviewer decides</text></g>
+  </g>
+</svg>

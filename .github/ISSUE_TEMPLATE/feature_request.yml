@@ -1,0 +1,32 @@
+name: Feature request
+description: Propose a scoped workflow or usability improvement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain the plant-annotation use case and current limitation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Include inputs, outputs, ambiguity, and failure behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety boundary
+      options:
+        - label: The proposal keeps ranking separate from annotation approval.
+          required: true
+        - label: The proposal defines behavior when evidence is missing or ambiguous.
+          required: true

@@ -1,0 +1,419 @@
+{
+  "candidates": [
+    {
+      "candidate_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "conflict_member_count": 2,
+      "conflict_set_digest": "EXAMPLE-CONFLICT-1",
+      "end": 190,
+      "gene_id": "PPCONS_gene_a",
+      "patch_included": true,
+      "rank_band": "top_1_percent",
+      "rank_percentile": 1.0,
+      "rank_percentile_field": "v04_primary_rank_percentile",
+      "rank_position": 1,
+      "review": {
+        "decision": "accept_addition",
+        "rationale": "Selected exact chain from the mutually exclusive conflict set",
+        "reviewed_at_utc": "2026-08-09T00:00:00Z",
+        "reviewer": "example-review-team"
+      },
+      "score": 0.91,
+      "score_field": "v04_primary_rank_score",
+      "seqid": "chr2",
+      "span_bp": 90,
+      "start": 101,
+      "strand": "+",
+      "support_methods": [
+        "gemoma",
+        "lifton",
+        "miniprot"
+      ],
+      "topology": {
+        "available": true,
+        "coherence_score": 0.88,
+        "partner_gene_id": "BASE_homeolog_a",
+        "reason": "accepted_existing_wgd_partner"
+      },
+      "transcripts": [
+        {
+          "cds": [
+            [
+              101,
+              190,
+              "0"
+            ]
+          ],
+          "end": 190,
+          "start": 101,
+          "transcript_id": "PPCONS_tx_a"
+        }
+      ]
+    },
+    {
+      "candidate_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "conflict_member_count": 1,
+      "conflict_set_digest": "",
+      "end": 390,
+      "gene_id": "PPCONS_gene_c",
+      "patch_included": true,
+      "rank_band": "remainder",
+      "rank_percentile": 0.6666666666666666,
+      "rank_percentile_field": "v04_primary_rank_percentile",
+      "rank_position": 2,
+      "review": {
+        "decision": "accept_addition",
+        "rationale": "Accepted independent non-conflicting chain",
+        "reviewed_at_utc": "2026-08-09T00:02:00Z",
+        "reviewer": "example-review-team"
+      },
+      "score": 0.79,
+      "score_field": "v04_primary_rank_score",
+      "seqid": "chr3",
+      "span_bp": 90,
+      "start": 301,
+      "strand": "-",
+      "support_methods": [
+        "gemoma",
+        "lifton"
+      ],
+      "topology": {
+        "available": true,
+        "coherence_score": 0.73,
+        "partner_gene_id": "BASE_homeolog_c",
+        "reason": "accepted_existing_wgd_partner"
+      },
+      "transcripts": [
+        {
+          "cds": [
+            [
+              301,
+              390,
+              "0"
+            ]
+          ],
+          "end": 390,
+          "start": 301,
+          "transcript_id": "PPCONS_tx_c"
+        }
+      ]
+    },
+    {
+      "candidate_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "conflict_member_count": 2,
+      "conflict_set_digest": "EXAMPLE-CONFLICT-1",
+      "end": 240,
+      "gene_id": "PPCONS_gene_b",
+      "patch_included": false,
+      "rank_band": "remainder",
+      "rank_percentile": 0.3333333333333333,
+      "rank_percentile_field": "v04_primary_rank_percentile",
+      "rank_position": 3,
+      "review": {
+        "decision": "reject",
+        "rationale": "Rejected alternative chain from the same conflict set",
+        "reviewed_at_utc": "2026-08-09T00:01:00Z",
+        "reviewer": "example-review-team"
+      },
+      "score": 0.62,
+      "score_field": "v04_primary_rank_score",
+      "seqid": "chr2",
+      "span_bp": 90,
+      "start": 151,
+      "strand": "+",
+      "support_methods": [
+        "lifton",
+        "miniprot"
+      ],
+      "topology": {
+        "available": false,
+        "coherence_score": null,
+        "partner_gene_id": "",
+        "reason": "nonreciprocal_multiple_partners"
+      },
+      "transcripts": [
+        {
+          "cds": [
+            [
+              151,
+              240,
+              "0"
+            ]
+          ],
+          "end": 240,
+          "start": 151,
+          "transcript_id": "PPCONS_tx_b"
+        }
+      ]
+    }
+  ],
+  "conflict_sets": [
+    {
+      "conflict_set_digest": "EXAMPLE-CONFLICT-1",
+      "member_count": 2,
+      "member_digests": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      ],
+      "pairwise_differences": [
+        {
+          "cds_counts": [
+            1,
+            1
+          ],
+          "left_candidate_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "phase_mismatch_segments": 0,
+          "right_candidate_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "same_cds_count": true,
+          "same_strand": true,
+          "span_overlap_fraction_of_shorter": 0.444444,
+          "summed_boundary_displacement_bp": 100
+        }
+      ],
+      "seqids": [
+        "chr2"
+      ],
+      "shared_axis": {
+        "end": 240,
+        "start": 101
+      }
+    }
+  ],
+  "counts": {
+    "accepted_review": 2,
+    "automatic_approval": 0,
+    "automatic_approval_checked": true,
+    "byte_identical_reversion": true,
+    "candidates": 3,
+    "conflict_sets": 1,
+    "conflicted_candidates": 2,
+    "nonconflicted": 1,
+    "patch_events": 2,
+    "review_decisions": {
+      "accept_addition": 2,
+      "defer": 0,
+      "reject": 1,
+      "unreviewed": 0
+    },
+    "reviewed": 3,
+    "topology_available": 2
+  },
+  "distributions": {
+    "by_seqid": [
+      {
+        "count": 2,
+        "seqid": "chr2"
+      },
+      {
+        "count": 1,
+        "seqid": "chr3"
+      }
+    ],
+    "score_histogram": {
+      "bins": [
+        {
+          "count": 1,
+          "lower": 0.62,
+          "upper": 0.649
+        },
+        {
+          "count": 0,
+          "lower": 0.649,
+          "upper": 0.678
+        },
+        {
+          "count": 0,
+          "lower": 0.678,
+          "upper": 0.7070000000000001
+        },
+        {
+          "count": 0,
+          "lower": 0.7070000000000001,
+          "upper": 0.736
+        },
+        {
+          "count": 0,
+          "lower": 0.736,
+          "upper": 0.765
+        },
+        {
+          "count": 1,
+          "lower": 0.765,
+          "upper": 0.794
+        },
+        {
+          "count": 0,
+          "lower": 0.794,
+          "upper": 0.8230000000000001
+        },
+        {
+          "count": 0,
+          "lower": 0.8230000000000001,
+          "upper": 0.8520000000000001
+        },
+        {
+          "count": 0,
+          "lower": 0.8520000000000001,
+          "upper": 0.881
+        },
+        {
+          "count": 1,
+          "lower": 0.881,
+          "upper": 0.91
+        }
+      ],
+      "maximum": 0.91,
+      "minimum": 0.62
+    }
+  },
+  "embedding": {
+    "conflict_closure_extra": 0,
+    "embedded": 3,
+    "full_universe_files": [
+      "report.json",
+      "candidates.tsv",
+      "review_ledger_template.tsv"
+    ],
+    "maximum_requested": 5000,
+    "order": "descending_review_priority_with_conflict_set_closure",
+    "total": 3,
+    "truncated": false
+  },
+  "generator": {
+    "name": "PloidyPatch",
+    "version": "1.0.0"
+  },
+  "inputs": [
+    {
+      "bytes": 1354,
+      "file_name": "candidate.gff3",
+      "role": "candidate_gff",
+      "sha256": "cd072d73b6552ebe24b465d9f7b5a4dc0cbf86f260a28975a2c807052349fc99"
+    },
+    {
+      "bytes": 333,
+      "file_name": "decisions.tsv",
+      "role": "pool_decisions",
+      "sha256": "fd3c2d235c1cf6b7b1480aba96a9811e2488499b079f2c8d91266064fe2616f8"
+    },
+    {
+      "bytes": 614,
+      "file_name": "candidate.gff3.manifest.json",
+      "role": "pool_manifest",
+      "sha256": "32c0bbd667cd52b24c6a10b976bbae8d0d72cc66cda97dcd80f70a255a802692"
+    },
+    {
+      "bytes": 584,
+      "file_name": "review_decisions.tsv",
+      "role": "review_decisions",
+      "sha256": "d67d33d74f09dc10b0faf1cc5f1537f143e29be21afafcf49a0ff0757117e430"
+    },
+    {
+      "bytes": 349,
+      "file_name": "report_scores.tsv",
+      "role": "scores",
+      "sha256": "ed307d7b50fc52b9194357712cd6d4c3b4be938e7170c78658832d5ed8b5cd5a"
+    },
+    {
+      "bytes": 265,
+      "file_name": "report_copy_features.tsv",
+      "role": "copy_features",
+      "sha256": "75b39503e167bb9583b167524d2bcaebefe087e0946870fffae5bd78693b1586"
+    },
+    {
+      "bytes": 432,
+      "file_name": "report_topology.tsv",
+      "role": "topology_features",
+      "sha256": "527117e7033c0b880747c41c3df6604374d37795a840933ecf02247755db23fa"
+    },
+    {
+      "bytes": 4215,
+      "file_name": "reviewed_copy_additions.edits.json",
+      "role": "patch_edits",
+      "sha256": "c0e8ebc5c3fcca0b63a07426e980bcb75fdbc4ca73daecd5f12e2c7022fa9125"
+    },
+    {
+      "bytes": 1658,
+      "file_name": "run_summary.json",
+      "role": "run_summary",
+      "sha256": "c857854a1686e35164e4f43ca7eef34bf8fc35d5361534974640afba0f62da62"
+    }
+  ],
+  "interpretation": [
+    {
+      "level": "positive",
+      "text": "All 3 candidates have explicit decisions.",
+      "title": "Review coverage"
+    },
+    {
+      "level": "neutral",
+      "text": "v04_primary_rank_score spans 0.62 to 0.91. It controls inspection order, not acceptance.",
+      "title": "Review priority"
+    },
+    {
+      "level": "positive",
+      "text": "The applied annotation was reverted to the exact source bytes.",
+      "title": "Patch verification"
+    },
+    {
+      "level": "positive",
+      "text": "All 1 mutually exclusive conflict set obey the at-most-one-acceptance rule.",
+      "title": "Conflict safety"
+    },
+    {
+      "level": "neutral",
+      "text": "Topology is available for 2/3 candidates (66.7%) and is interpreted only as applicability-gated supporting evidence.",
+      "title": "Evolutionary context"
+    },
+    {
+      "level": "positive",
+      "text": "Checked 3 candidates across 1 automatic-approval field: none was automatically approved. Ranking only prioritizes human review.",
+      "title": "Decision boundary"
+    }
+  ],
+  "method_overlap": {
+    "all_three": 1,
+    "available": true,
+    "by_method": {
+      "gemoma": 2,
+      "lifton": 3,
+      "miniprot": 2
+    },
+    "combinations": {
+      "gemoma+lifton": 1,
+      "gemoma+lifton+miniprot": 1,
+      "lifton+miniprot": 1
+    }
+  },
+  "policy": {
+    "automatic_approval": false,
+    "automatic_approval_verified": true,
+    "conflict_rule": "at_most_one_accepted_alternative_per_conflict_set",
+    "displayed_score_field": "v04_primary_rank_score",
+    "score_direction": "higher_is_higher_review_priority",
+    "score_interpretation": "review_rank_not_probability",
+    "topology_role": "optional_applicability_gated_support",
+    "unreviewed_policy": "exclude"
+  },
+  "run": {
+    "generated_at_utc": "2026-08-11T03:10:17Z",
+    "title": "Minimal reviewed patch"
+  },
+  "schema_version": "ploidypatch.review_report.v1",
+  "summary": {
+    "detail": "Archive this checksum-bound report with the patch and run summary.",
+    "headline": "Review complete and byte-identical reversion verified",
+    "state": "validated_reversible_run"
+  },
+  "triage": {
+    "counts": {
+      "deferred": 0,
+      "unresolved_conflict_sets": 0,
+      "unreviewed": 0
+    },
+    "deferred": [],
+    "policy": "inspection_order_only_never_acceptance_advice",
+    "top_unreviewed": [],
+    "unresolved_conflict_sets": []
+  },
+  "truth_access": false
+}

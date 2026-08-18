@@ -1,0 +1,209 @@
+{
+  "schema_version": "ploidypatch.external_holdout_contract.v0.5",
+  "holdout_id": "coffea_et39_v1.0",
+  "policy_id": "ploidypatch_coffea_external_core_h1_v1.0",
+  "test_role": "untouched_confirmatory_external_species",
+  "model_version": "none_core_H1_known_subgenome_v1.0",
+  "references": [
+    {
+      "role": "target",
+      "species_id": "Coffea_arabica_ET39",
+      "release": "ET39_HiFi_GCF_036785885.1_RefSeq",
+      "bundle_id": "target_et39",
+      "wgdi_prefix": "car",
+      "primary_seqid_table": "config/primary_seqids/coffea_arabica_et39_hifi.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/target_et39_gcf_036785885_1/genomic.fna.gz",
+          "bytes": 332631798,
+          "sha256": "d2654fcda06f42f6a7003228ccdea623504b2d961766526c95b90ff8adef5066"
+        },
+        "gff3": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/target_et39_gcf_036785885_1/genomic.gff.gz",
+          "bytes": 20878591,
+          "sha256": "0bdec902ec13bea13e58fef35d9bdec20a6202c74c4a07fff904038b38924ef1"
+        },
+        "protein": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/target_et39_gcf_036785885_1/protein.faa.gz",
+          "bytes": 18038852,
+          "sha256": "51aa69d9e8b323924d9cd326d589e33c293b4ed0b65623d78d7883b4e14778c1"
+        }
+      }
+    },
+    {
+      "role": "candidate_reference",
+      "species_id": "Coffea_eugenioides_BuA",
+      "release": "Bu-A_v1_Coffee_Genome_Hub_analysis_11",
+      "bundle_id": "candidate_bua",
+      "wgdi_prefix": "ceu",
+      "primary_seqid_table": "config/primary_seqids/coffea_eugenioides_bua_v1.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/candidate_eugenioides_bua_coffee_hub_v1/assembly.fna",
+          "bytes": 646540924,
+          "sha256": "59b0c550841fe3793b7266b20f40f3a6fd2bf23af141af1efc50f7f214e07da9"
+        },
+        "gff3": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/candidate_eugenioides_bua_coffee_hub_v1/annotation.gff3.gz",
+          "bytes": 7626724,
+          "sha256": "dcbd29534b2b769aa5bfd74bc89d0c7cfefa10597dc9d8b7971aea49302f2705"
+        },
+        "protein": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/candidate_eugenioides_bua_coffee_hub_v1/protein.faa",
+          "bytes": 14225311,
+          "sha256": "c02858fdb91314b17f2cf7bd61267af7c4cdd614449a9163c8a5d3a139b8cff0"
+        }
+      }
+    },
+    {
+      "role": "candidate_reference",
+      "species_id": "Coffea_mauritiana",
+      "release": "v1_Coffee_Genome_Hub_analysis_9",
+      "bundle_id": "candidate_mauritiana",
+      "wgdi_prefix": "cma",
+      "primary_seqid_table": "config/primary_seqids/coffea_mauritiana_v1.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/candidate_mauritiana_coffee_hub_v1/assembly.fna",
+          "bytes": 440499526,
+          "sha256": "3205b131997fadc021af7db3d4cbbb448b79363633afbbd24d84e4e90b60a8d9"
+        },
+        "gff3": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/candidate_mauritiana_coffee_hub_v1/annotation.gff3.gz",
+          "bytes": 6172196,
+          "sha256": "cbfada34622121dfd53d20b68acd88422c049188e2735304b62d0d191922887c"
+        },
+        "protein": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/candidate_mauritiana_coffee_hub_v1/protein.faa",
+          "bytes": 10275892,
+          "sha256": "b5fbd3f7f5036ec063f80c8c8e47c5c1fc93eb693a3997e5484e0f3cf5a03e29"
+        }
+      }
+    },
+    {
+      "role": "evaluator_reference",
+      "species_id": "Gardenia_jasminoides",
+      "release": "ASM1310374v1_GCA_013103745.1_PlantGIR_v1",
+      "bundle_id": "evaluator_gardenia",
+      "wgdi_prefix": "gja",
+      "primary_seqid_table": "config/primary_seqids/gardenia_jasminoides_asm1310374v1.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "data/codexli/projects/PloidyPatch/data/raw/external_sources/coffea_v1.0/evaluator_gardenia_gca_013103745_1/genomic.fna.gz",
+          "bytes": 166169651,
+          "sha256": "615251ca5b887de1f3c0fc02fa43959ad177a9344f75efdf81d2e71cc5b8d3a7"
+        },
+        "gff3": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/plantGIR/gff3/Gardenia_jasminoides.gff3",
+          "bytes": 130438507,
+          "sha256": "3f6342bbfe9a9fce26718b549d7510c1bdc4f17b39406bd23761726d5fa410cc"
+        },
+        "protein": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/plantGIR/prot/Gardenia_jasminoides.pro.fa",
+          "bytes": 12380074,
+          "sha256": "80dcf9c85f6fabd0c93b6411912ccad929875b1854f61a86b5abf038c5713510"
+        }
+      }
+    },
+    {
+      "role": "evaluator_reference",
+      "species_id": "Ophiorrhiza_pumila",
+      "release": "v1_PlantGIR",
+      "bundle_id": "evaluator_ophiorrhiza",
+      "wgdi_prefix": "opu",
+      "primary_seqid_table": "config/primary_seqids/ophiorrhiza_pumila_v1.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/plantGIR/genome/Ophiorrhiza_pumila.genome.fa.tar.gz",
+          "bytes": 130782239,
+          "sha256": "3ed5a5ec2a203da6c1c8f470cdbb655122426634bcc00c8280d8d21c6b5a0c26",
+          "container": {
+            "format": "tar.gz",
+            "member_name": "Ophiorrhiza_pumila.genome.fa",
+            "member_bytes": 447657994,
+            "member_sha256": "3c73323c673b100b1d9c4fc4bbbfb5dba3b00d9d7b7cb42da3d6e1496a68b3e7"
+          }
+        },
+        "gff3": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/plantGIR/gff3/Ophiorrhiza_pumila.gff3",
+          "bytes": 93182759,
+          "sha256": "ef4a1e43af9e43577ee8681034af28fc4c680af97177373e5e53a4ff2dca8538"
+        },
+        "protein": {
+          "source_relative_path": "nas_data/NFS/Public_genome_data/plantGIR/prot/Ophiorrhiza_pumila.pro.fa",
+          "bytes": 12511848,
+          "sha256": "6ea742e3603d1552b188abede9012da3ada70de079ba62c8fa8e8cada302873b"
+        }
+      }
+    }
+  ],
+  "seeds": {
+    "truth_sampler": 20260911,
+    "h1_bootstrap": 20260912
+  },
+  "target_resolved_parameters": {
+    "primary_chromosome_count": 22,
+    "minimum_target_chromosomes_fraction": 0.75,
+    "minimum_target_chromosomes": 17
+  },
+  "scientific_parameters": {
+    "protocol_profile": "core_H1_known_subgenome_no_ranker",
+    "candidate_method_families": ["miniprot_0.18-r281", "GeMoMa_1.9", "LiftOn_1.0.11"],
+    "multiple_references_per_method_vote": "one_method_family_vote",
+    "candidate_topology_identity": "seqid+strand+exact_phased_CDS_chain",
+    "primary_candidate_policy": "retain_distinct_phased_CDS_chains",
+    "legacy_candidate_comparator": "suppress_strongly_overlapping_alternative_chains",
+    "adapter_min_identity": 0.5,
+    "adapter_min_query_coverage": 0.5,
+    "adapter_require_intact": true,
+    "adapter_max_existing_cds_overlap": 0.2,
+    "adapter_max_redundancy_overlap": 0.5,
+    "truth_pair_self_wgdi_min_block_pairs": 20,
+    "truth_pair_self_wgdi_require_cross_seqid": true,
+    "truth_pair_self_wgdi_require_reciprocal_unique": true,
+    "truth_pair_event_discriminator": "predeclared_homoeolog_group_and_subgenome_labels",
+    "truth_pair_target_subgenome_pairing": "same_group_exactly_one_member_from_each_subgenome",
+    "truth_pair_yn00_ks_policy": "descriptive_only_not_used_for_selection",
+    "truth_pair_outgroup_min_block_pairs": 20,
+    "truth_pair_outgroup_counterpart_multiplicity": "exactly_two_target_genes",
+    "truth_pair_outgroup_min_support_groups": 2,
+    "truth_pair_outgroup_require_cross_seqid": true,
+    "truth_pair_outgroup_require_reciprocal_unique": true,
+    "truth_pair_final_rule": "exact_unordered_pair_intersection_of_predeclared_subgenome_self_wgdi_and_two_outgroup_support",
+    "truth_event_count": 800,
+    "minimum_formal_event_count": 500,
+    "minimum_events_per_complexity_bin": 20,
+    "complexity_bins": ["one", "two_to_three", "four_to_six", "seven_plus"],
+    "truth_removal_policy": "remove_exactly_one_deterministically_selected_partner_per_pair",
+    "truth_sampler_balance": "global_chromosome_round_robin_then_four_CDS_complexity_bins_then_sha256_rank",
+    "primary_hypothesis": "H1_retain_distinct_vs_suppress_overlap_only",
+    "h1_metric": "event_exact_phased_CDS_recall_retain_distinct_minus_suppress_overlap",
+    "h1_success_gate": "delta_gt_0_and_paired_bootstrap_CI_lower_gt_0",
+    "bootstrap_replicates": 20000,
+    "bootstrap_unit": "paired_event",
+    "bootstrap_interval": "two_sided_95pct_percentile",
+    "h2_or_topology_ranking": "forbidden",
+    "retired_ranker": "ploidypatch.stable_reference_ranker.v0.9",
+    "no_op_and_oracle_sentinels": "required",
+    "restoration_sentinel": "byte_identical_required",
+    "genome_sha256_sentinel": "identical_required",
+    "all_arm_collateral_loss_maximum": 0,
+    "automatic_copy_addition_approval": false
+  },
+  "truth_blind": {
+    "selection_by_pair_yield_candidate_count_or_model_performance": false,
+    "reference_role_change_after_freeze": false,
+    "wgd_pairs_enumerated_before_protocol_freeze": false,
+    "candidate_counts_computed_before_protocol_freeze": false,
+    "truth_labels_accessed_before_protocol_freeze": false,
+    "candidate_truth_access": false,
+    "candidate_evaluator_reference_access": false,
+    "blind_truth_mount": false,
+    "blind_complete_target_annotation_mount": false,
+    "blind_evaluator_reference_mount": false,
+    "blind_nas_data_mount": false,
+    "blind_network_access": false,
+    "complete_control_generated_after_blind_raw_prediction_freeze": true,
+    "automatic_copy_addition_approval": false
+  }
+}

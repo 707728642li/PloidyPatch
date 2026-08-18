@@ -1,0 +1,4 @@
+consensus_digest	status	conflict_set_digest	conflict_member_count
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa	accepted	EXAMPLE-CONFLICT-1	2
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb	accepted	EXAMPLE-CONFLICT-1	2
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc	accepted		1

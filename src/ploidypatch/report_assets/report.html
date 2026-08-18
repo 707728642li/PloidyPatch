@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'nonce-ploidypatch-report-v1'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__REPORT_TITLE__ | PloidyPatch</title>
+<style>
+__REPORT_CSS__
+</style>
+</head>
+<body>
+<header class="hero"><div class="brand"><div class="mark">PP</div>PloidyPatch evidence report</div><h1>__REPORT_TITLE__</h1><p>Duplication-aware candidate preservation, human review, and reversible annotation patching — summarized without converting rank scores into biological truth.</p><div class="hero-meta"><span>Report schema v1</span><span>PloidyPatch __PLOIDYPATCH_VERSION__</span><span id="generated"></span></div></header>
+<a class="skip" href="#triage">Skip to suggested inspection order</a>
+<main id="main-content">
+<section class="status" id="status"><div><div class="eyebrow">Current decision state</div><strong id="status-headline"></strong><small id="status-detail"></small></div><div id="status-chip"></div></section>
+<section class="metrics" id="metrics"></section>
+<section class="section" id="triage"><div class="section-head"><div><div class="eyebrow">Where to start</div><h2>Suggested inspection order</h2></div><div class="caption">A queue for inspection effort, never advice to accept.</div></div><div class="triage-grid" id="triage-grid"></div><p class="caption">These queues order inspection effort. They do not evaluate biological correctness and do not recommend any decision.</p></section>
+<section class="section"><div class="section-head"><div><div class="eyebrow">Run composition</div><h2>From candidate pool to reviewed patch</h2></div></div><div class="grid-2"><div class="panel"><h3>Candidate-to-patch funnel</h3><div class="funnel" id="funnel"></div><div class="caption">Counts are exact candidate-universe joins, not extrapolations.</div></div><div class="panel"><h3>Human review landscape</h3><div class="review-chart"><div class="donut" id="donut"><div class="donut-label" id="donut-label"></div></div><div class="legend" id="review-legend"></div></div><div class="caption">Unreviewed candidates remain excluded. Scores never create acceptance.</div></div></div></section>
+<section class="section"><div class="section-head"><div><div class="eyebrow">Evidence</div><h2>Support composition and interpretation</h2></div></div><div class="grid-2"><div class="panel"><h3>Projection-method intersections</h3><div class="intersections" id="overlap"></div><div class="caption" id="overlap-caption"></div></div><div><div class="notes" id="notes"></div></div></div></section>
+<section class="section"><div class="section-head"><div><div class="eyebrow">Distribution</div><h2>Where candidates occur and how review is prioritized</h2></div></div><div class="grid-2"><div class="panel"><h3>Genomic candidate distribution</h3><div class="hbars" id="chromosome-distribution"></div><div class="caption" id="chromosome-caption"></div></div><div class="panel"><h3>Review-priority distribution</h3><div id="score-distribution"></div><div class="caption" id="score-caption"></div></div></div></section>
+<section class="section"><div class="section-head"><div><div class="eyebrow">Review workspace</div><h2>Candidate explorer</h2></div><div class="caption">Select a row to inspect its structure and evidence.</div></div><div class="reason" id="embedding-warning" hidden></div><div class="explorer"><div class="panel"><div class="controls"><input id="search" aria-label="Search candidates" placeholder="Search digest, gene, chromosome, reviewer…"><select id="decision-filter" aria-label="Filter decisions"><option value="">All decisions</option><option>accept_addition</option><option>reject</option><option>defer</option><option>unreviewed</option></select><select id="conflict-filter" aria-label="Filter conflicts"><option value="">All candidates</option><option value="conflict">Conflicted only</option><option value="singleton">Non-conflicted only</option></select><span class="caption" id="result-count"></span></div><div class="table-wrap"><table><caption class="sr-only">Candidate review table sorted by review priority</caption><thead><tr><th scope="col">Candidate</th><th scope="col">Locus</th><th scope="col">Support</th><th scope="col">Conflict</th><th scope="col">Review priority</th><th scope="col">Decision</th></tr></thead><tbody id="candidate-rows"></tbody></table></div></div><aside class="panel detail" id="detail" aria-live="polite" aria-atomic="false"></aside></div></section>
+<section class="section"><div class="section-head"><div><div class="eyebrow">Reproducibility</div><h2>Integrity and provenance</h2></div></div><div class="panel integrity" id="integrity"></div></section>
+</main><footer>Generated as a self-contained, offline PloidyPatch report. Verify the adjacent <code>SHA256SUMS</code> before review or archival use.</footer>
+<script nonce="ploidypatch-report-v1" id="report-data" type="application/json">__REPORT_PAYLOAD__</script>
+<script nonce="ploidypatch-report-v1">
+__REPORT_JS__
+</script>
+</body></html>

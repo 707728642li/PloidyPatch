@@ -1,0 +1,10 @@
+species	role	bytes	sha256	source_path	destination_name
+zea_mays	genome	645391865	af3c3a997f416d2604ab88dd268697b9df24bc15979529a37ba8c92faf6efa64	/nas_data/NFS/Public_genome_data/genome_database/zea_mays/dna/Zea_mays.Zm-B73-REFERENCE-NAM-5.0.dna.toplevel.fa.gz	genome.fa.gz
+zea_mays	annotation	12751256	cb8ca4d0607d3363e717f911db3a77c77cf882183850f188ff164d6cd130ab56	/nas_data/NFS/Public_genome_data/Ensemble/gff3/zea_mays/Zea_mays.Zm-B73-REFERENCE-NAM-5.0.62.gff3.gz	annotation.gff3.gz
+zea_mays	protein	12169190	6ba889fd9b3ba438cb314fd41df2e8d39c4531be49c3aa3a5691f426e9dc006e	/nas_data/NFS/Public_genome_data/genome_database/zea_mays/pep/Zea_mays.Zm-B73-REFERENCE-NAM-5.0.pep.all.fa.gz	protein.fa.gz
+sorghum_bicolor	genome	203131834	ad40aa753793907fee06b3fe18a57d97f2f72798f4bcef15417a87fe36df73fb	/nas_data/NFS/Public_genome_data/genome_database/sorghum_bicolor/dna/Sorghum_bicolor.Sorghum_bicolor_NCBIv3.dna.toplevel.fa.gz	genome.fa.gz
+sorghum_bicolor	annotation	7586253	a36a1def9f9573b9f079959670b5786a5d12b703ae654ede3208a58375a22a76	/nas_data/NFS/Public_genome_data/Ensemble/gff3/sorghum_bicolor/Sorghum_bicolor.Sorghum_bicolor_NCBIv3.62.gff3.gz	annotation.gff3.gz
+sorghum_bicolor	protein	9920117	bdf9799c869796e98d0618fc60b8490779e2c0205aad02a27a1f826cf9f89850	/nas_data/NFS/Public_genome_data/genome_database/sorghum_bicolor/pep/Sorghum_bicolor.Sorghum_bicolor_NCBIv3.pep.all.fa.gz	protein.fa.gz
+setaria_italica	genome	123772935	6765505d3c4c2e923e72c027de7f0b4864d8a4b366ce55513be88ecce4545c71	/nas_data/NFS/Public_genome_data/genome_database/setaria_italica/dna/Setaria_italica.Setaria_italica_v2.0.dna.toplevel.fa.gz	genome.fa.gz
+setaria_italica	annotation	6492066	a54d7f50bd6c94a7213b11a497c020ca4e01c8e27b5690d0a6556d6a2ee3b018	/nas_data/NFS/Public_genome_data/Ensemble/gff3/setaria_italica/Setaria_italica.Setaria_italica_v2.0.62.gff3.gz	annotation.gff3.gz
+setaria_italica	protein	9554831	3c3a832258449ee3a23cd109931f88332e9b55180272cf4aae73c4e20b5ae3e7	/nas_data/NFS/Public_genome_data/genome_database/setaria_italica/pep/Setaria_italica.Setaria_italica_v2.0.pep.all.fa.gz	protein.fa.gz

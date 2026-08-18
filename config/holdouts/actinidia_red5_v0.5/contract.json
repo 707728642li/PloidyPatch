@@ -1,0 +1,199 @@
+{
+  "schema_version": "ploidypatch.external_holdout_contract.v0.5",
+  "holdout_id": "actinidia_red5_v0.5",
+  "policy_id": "ploidypatch_actinidia_external_validation_v0.5",
+  "test_role": "target_level_predeclared_untouched_secondary_replication",
+  "model_version": "PloidyPatch_ranker_v0.4",
+  "references": [
+    {
+      "role": "target",
+      "species_id": "Actinidia_chinensis_Red5",
+      "release": "Red5_PS1_1.69.0_EnsemblPlants_v45",
+      "bundle_id": "target_red5",
+      "wgdi_prefix": "red5",
+      "primary_seqid_table": "config/primary_seqids/actinidia_chinensis_red5.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "plantgarden_database/raw_data/t3625/Actinidia_chinensis.Red5_PS1_1.69.0.dna.toplevel.fa.gz",
+          "bytes": 165032199,
+          "sha256": "b8a50d53bf9b18fa879da3ade5e8162e4d896740afddf0fab1967e23b9c11533"
+        },
+        "gff3": {
+          "source_relative_path": "plantgarden_database/raw_data/t3625/Actinidia_chinensis.Red5_PS1_1.69.0.45.chr.gff3.gz",
+          "bytes": 7400242,
+          "sha256": "41a81f0a85256d58b4fd2fde4032b6326c8295592d4ea8f0341d37575b2d8ca9"
+        },
+        "protein": {
+          "source_relative_path": "plantgarden_database/raw_data/t3625/Actinidia_chinensis.Red5_PS1_1.69.0.pep.all.fa.gz",
+          "bytes": 10391929,
+          "sha256": "3256699bebf59ef25c6811008d1bec44c95dfb85e3d7de4abac70264cd98663d"
+        }
+      }
+    },
+    {
+      "role": "candidate_reference",
+      "species_id": "Actinidia_eriantha_White",
+      "release": "White_v1.0",
+      "bundle_id": "candidate_eriantha",
+      "wgdi_prefix": "aer",
+      "primary_seqid_table": "config/primary_seqids/actinidia_eriantha_white_v1.0.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "plantgarden_database/raw_data/t165200/Actinidia_eriantha.chr.fasta.gz",
+          "bytes": 199769654,
+          "sha256": "259a69329f7a2e07d45a1fea2918b4eba5f3f33b639cc434c93586615fbc5024"
+        },
+        "gff3": {
+          "source_relative_path": "plantgarden_database/raw_data/t165200/Actinidia_eriantha.gff3.gz",
+          "bytes": 3994059,
+          "sha256": "b26fca387536811110270d2029f7ceb851723fa15a7a380860216d22d8a066c5"
+        },
+        "protein": {
+          "source_relative_path": "plantgarden_database/raw_data/t165200/Actinidia_eriantha.pep.fasta.gz",
+          "bytes": 8853995,
+          "sha256": "45d89c5d022d7b2ee3f9992010d3bd50b4bcbbee323b35d8c28088ac10c28f73"
+        }
+      }
+    },
+    {
+      "role": "candidate_reference",
+      "species_id": "Actinidia_rufa_ARU",
+      "release": "ARU_r1.0_GCA_030159155.1",
+      "bundle_id": "candidate_rufa",
+      "wgdi_prefix": "aru",
+      "primary_seqid_table": "config/primary_seqids/actinidia_rufa_aru_r1.0.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "plantgarden_database/raw_data/t165716/ARU_r1.0.pmol.fasta.gz",
+          "bytes": 187899618,
+          "sha256": "a275b3f5f2e3d92ba822906fd8003d205fb6489a58e2ee48f307fd0fd0cd97f0"
+        },
+        "gff3": {
+          "source_relative_path": "plantgarden_database/raw_data/t165716/ARU1.0.genes.gff.gz",
+          "bytes": 7072736,
+          "sha256": "a1dc19871b24fb64b44c4ff2a8ecf95daf96c24f5505cc1cc86442d6752b26fe"
+        },
+        "protein": {
+          "source_relative_path": "plantgarden_database/raw_data/t165716/ARU1.0.proteins.fasta.gz",
+          "bytes": 13719497,
+          "sha256": "050d96e551c8b0b2b800132364851ab1fa29d5046236237ff13d1884f9291cef"
+        }
+      }
+    },
+    {
+      "role": "evaluator_reference",
+      "species_id": "Rhododendron_simsii",
+      "release": "NCBI_GCA_014282245.1",
+      "bundle_id": "evaluator_rhododendron",
+      "wgdi_prefix": "rhs",
+      "primary_seqid_table": "config/primary_seqids/rhododendron_simsii_gca_014282245.1.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "plantgarden_database/raw_data/t118357/GCA_014282245.1_ASM1428224v1_genomic.fna.gz",
+          "bytes": 175086237,
+          "sha256": "0101fc0d9d7e27a9cc59687cb61cf7014e66372f40558a5b5ab4935aba640aab"
+        },
+        "gff3": {
+          "source_relative_path": "plantgarden_database/raw_data/t118357/GCA_014282245.1_ASM1428224v1_genomic.gff.gz",
+          "bytes": 7027134,
+          "sha256": "681c5bbb24f58260318315bcf3094b2a20c2d020d2ca3b7adbd730647ebbffff"
+        },
+        "protein": {
+          "source_relative_path": "plantgarden_database/raw_data/t118357/GCA_014282245.1_ASM1428224v1_protein.faa.gz",
+          "bytes": 8870740,
+          "sha256": "ff714ad8d26e9e2294d74c193c48be136a1f23469881e06fe515856ef9cb5aef"
+        }
+      }
+    },
+    {
+      "role": "evaluator_reference",
+      "species_id": "Diospyros_oleifera",
+      "release": "Diospyros_oleifera_v1.0",
+      "bundle_id": "evaluator_diospyros",
+      "wgdi_prefix": "dol",
+      "primary_seqid_table": "config/primary_seqids/diospyros_oleifera_v1.0.tsv",
+      "artifacts": {
+        "genome": {
+          "source_relative_path": "plantgarden_database/raw_data/t227308/Dol.genome.fa.gz",
+          "bytes": 220674718,
+          "sha256": "f6c6c409198c3dd5854ea7862f37e7ea8644657972dc3eaf642cede4cb7ca200"
+        },
+        "gff3": {
+          "source_relative_path": "plantgarden_database/raw_data/t227308/Dol.gff3.gz",
+          "bytes": 4391416,
+          "sha256": "6820b46cd41e098962416d35b98ebbfb7922a36475287e10d9289a0d96f5de68"
+        },
+        "protein": {
+          "source_relative_path": "plantgarden_database/raw_data/t227308/Dol.pep.fa.gz",
+          "bytes": 6597993,
+          "sha256": "6111890b204e9575d83874c4c3bc4a9947c91dd622970ef8af9297fbf7d5adb2"
+        }
+      }
+    }
+  ],
+  "seeds": {
+    "truth_sampler": 20261010,
+    "h1_bootstrap": 20261011,
+    "h2_bootstrap": 20261012,
+    "guard_v03_bootstrap": 20261013
+  },
+  "target_resolved_parameters": {
+    "primary_chromosome_count": 29,
+    "minimum_target_chromosomes_fraction": 0.75,
+    "minimum_target_chromosomes": 22
+  },
+  "scientific_parameters": {
+    "candidate_method_families": [
+      "miniprot_0.18-r281",
+      "GeMoMa_1.9",
+      "LiftOn_1.0.11"
+    ],
+    "multiple_references_per_method_vote": "one_method_family_vote",
+    "candidate_topology_identity": "seqid+strand+exact_phased_CDS_chain",
+    "primary_candidate_policy": "retain_distinct_phased_CDS_chains",
+    "legacy_candidate_comparator": "suppress_strongly_overlapping_alternative_chains",
+    "adapter_min_identity": 0.5,
+    "adapter_min_query_coverage": 0.5,
+    "adapter_require_intact": true,
+    "adapter_max_existing_cds_overlap": 0.2,
+    "adapter_max_redundancy_overlap": 0.5,
+    "truth_pair_self_wgdi_min_block_pairs": 20,
+    "truth_pair_self_wgdi_require_cross_seqid": true,
+    "truth_pair_self_wgdi_require_reciprocal_unique": true,
+    "truth_pair_outgroup_min_block_pairs": 20,
+    "truth_pair_outgroup_counterpart_multiplicity": "exactly_two_target_genes",
+    "truth_pair_outgroup_min_support_groups": 2,
+    "truth_pair_outgroup_require_cross_seqid": true,
+    "truth_pair_outgroup_require_reciprocal_unique": true,
+    "truth_pair_final_rule": "exact_unordered_pair_intersection_of_self_wgdi_and_two_outgroup_support",
+    "truth_event_count": 800,
+    "minimum_formal_event_count": 500,
+    "minimum_events_per_complexity_bin": 20,
+    "truth_removal_policy": "remove_exactly_one_deterministically_selected_partner_per_pair",
+    "truth_sampler_balance": "global_chromosome_round_robin_then_four_CDS_complexity_bins_then_sha256_rank",
+    "bootstrap_replicates": 20000,
+    "minimum_chromosome_bootstrap_valid_replicates": 19000,
+    "minimum_topology_coverage_among_positive_candidates": 0.7,
+    "minimum_v03_AP_gain_retained_fraction": 0.9,
+    "review_fraction_budgets": [0.005, 0.01, 0.02],
+    "review_absolute_budgets": [100, 250, 500],
+    "automatic_copy_addition_approval": false,
+    "score_interpretation": "review_priority_only"
+  },
+  "truth_blind": {
+    "selection_by_pair_yield_candidate_count_or_model_performance": false,
+    "reference_role_change_after_freeze": false,
+    "wgd_pairs_enumerated_before_protocol_freeze": false,
+    "candidate_counts_computed_before_protocol_freeze": false,
+    "truth_labels_accessed_before_protocol_freeze": false,
+    "candidate_truth_access": false,
+    "candidate_evaluator_reference_access": false,
+    "blind_truth_mount": false,
+    "blind_complete_target_annotation_mount": false,
+    "blind_evaluator_reference_mount": false,
+    "blind_nas_data_mount": false,
+    "blind_network_access": false,
+    "complete_control_generated_after_blind_raw_prediction_freeze": true,
+    "automatic_copy_addition_approval": false
+  }
+}

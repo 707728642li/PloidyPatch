@@ -1,0 +1,18 @@
+usage: ploidypatch [-h] [--version]
+                   {audit,benchmark,graph,patch,evidence,normalize,baseline}
+                   ...
+
+positional arguments:
+  {audit,benchmark,graph,patch,evidence,normalize,baseline}
+    audit               Audit one assembly annotation bundle before inference
+    benchmark           Generate or validate controlled annotation
+                        perturbations
+    graph               Build and score a plant event evidence graph
+    patch               Create, apply, or revert an immutable annotation patch
+    evidence            Prepare auditable inputs for external evidence engines
+    normalize           Create auditable, internally consistent input bundles
+    baseline            Prepare or adapt declared external baseline evidence
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit

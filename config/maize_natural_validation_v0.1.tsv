@@ -1,0 +1,9 @@
+role	source_id	accession_or_version	location	use_phase	independence_group	policy
+target_assembly	zea_mays_b73_nam5	Zm-B73-REFERENCE-NAM-5.0	/nas_data/NFS/Public_genome_data/genome_database/zea_mays/dna/Zea_mays.Zm-B73-REFERENCE-NAM-5.0.dna.toplevel.fa.gz	discovery	b73_nam5_assembly	primary_chromosomes_only
+target_annotation	zea_mays_b73_official	Zm00001eb.1	/nas_data/NFS/Public_genome_data/Ensemble/gff3/zea_mays/Zea_mays.Zm-B73-REFERENCE-NAM-5.0.62.gff3.gz	discovery	gramene_ensembl_annotation	complete_unperturbed_annotation
+validation_transcripts	maize_isophase_final	Zenodo:2611319/F1maize.FINAL.fasta	https://zenodo.org/api/records/2611319/files/F1maize.FINAL.fasta/content	post_candidate_freeze	isophase_2020	sequence_not_downloaded_before_candidate_freeze
+validation_counts	maize_isophase_demux	Zenodo:2611319/F1maize.FINAL.demux_FL_count.txt	https://zenodo.org/api/records/2611319/files/F1maize.FINAL.demux_FL_count.txt/content	post_candidate_freeze	isophase_2020	primary_support_uses_EM1_R1_END1_only
+validation_context	maize_isophase_v4_gff	Zenodo:2611319/F1maize.FINAL.gff	https://zenodo.org/api/records/2611319/files/F1maize.FINAL.gff/content	post_candidate_freeze	isophase_2020	context_only_remap_sequences_de_novo_to_NAM5
+raw_validation	maize_isophase_raw	E-MTAB-7837/ERP114624	https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-7837	post_case_selection	isophase_2020	recheck_manuscript_case_loci
+pan_genome	maize_nam_founders	25_NAM_founders	https://download.maizegdb.org/Genomes/NAM_Founders/	post_candidate_freeze	nam_shared_annotation_pipeline	recurrence_context_not_independent_truth
+temporal_silver	zea_mays_b73_preliminary	Zm00001e.1	https://download.maizegdb.org/Genomes/NAM_Founders/Zm-B73-REFERENCE-NAM-5.0/archive/Zm00001e.1/	optional_post_primary	preliminary_annotation	not_headline_explicitly_marked_do_not_use

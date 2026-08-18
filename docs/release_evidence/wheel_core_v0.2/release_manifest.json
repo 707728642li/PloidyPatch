@@ -1,0 +1,63 @@
+{
+  "build": {
+    "backend": "setuptools.build_meta",
+    "frontend": "PyPA build",
+    "isolation": true,
+    "python": "3.11.15"
+  },
+  "distributions": {
+    "sdist": {
+      "bytes": 1318661,
+      "members": 768,
+      "name": "ploidypatch-0.1.0a0.tar.gz",
+      "required_public_assets": [
+        "README.md",
+        "pyproject.toml",
+        "docs/USER_GUIDE.md",
+        "docs/REPRODUCIBILITY_GUIDE.md",
+        "docs/CLI_COMMAND_INVENTORY_v0.1.json",
+        "examples/minimal_reviewed_patch/run_example.py",
+        "examples/minimal_reviewed_patch/input_manifest.tsv",
+        "containers/Dockerfile",
+        "scripts/smoke_container_v0.1.sh"
+      ],
+      "sha256": "3ad3e3a2ef65e5ed33c120113d56d27564790129c6df124c4292e702b4cfd916"
+    },
+    "wheel": {
+      "bytes": 360670,
+      "members": 78,
+      "name": "ploidypatch-0.1.0a0-py3-none-any.whl",
+      "no_mandatory_runtime_dependencies": true,
+      "sha256": "a5287972f6bf4b60d044b466b565cab3ad0b30063189180dbbb607c6fb027f53"
+    }
+  },
+  "installed_smoke": {
+    "command_families": [
+      "audit",
+      "baseline",
+      "benchmark",
+      "evidence",
+      "graph",
+      "normalize",
+      "patch"
+    ],
+    "example_accepted_additions": 2,
+    "example_automatic_approval": false,
+    "example_byte_identical_reversion": true,
+    "pip_check": "passed",
+    "source_tree_pythonpath_used": false,
+    "version": "0.1.0a0"
+  },
+  "release_boundary": {
+    "formal_public_release": false,
+    "missing_owner_fields_unchanged": [
+      "authors",
+      "license_spdx",
+      "repository_url",
+      "archive_doi"
+    ]
+  },
+  "schema_version": "ploidypatch.release_candidate_evidence.v2",
+  "source_commit": "34988bdfa15a5f3bd107cf11329f26e842042e66",
+  "source_worktree_clean": true
+}

@@ -1,0 +1,18 @@
+##gff-version 3
+chr1	ExampleBase	gene	1	90	.	+	.	ID=BASE_gene_1
+chr1	ExampleBase	mRNA	1	90	.	+	.	ID=BASE_tx_1;Parent=BASE_gene_1
+chr1	ExampleBase	exon	1	90	.	+	.	ID=BASE_exon_1;Parent=BASE_tx_1
+chr1	ExampleBase	CDS	1	90	.	+	0	Parent=BASE_tx_1
+###
+chr2	PloidyPatchConsensus	gene	101	190	.	+	.	ID=PPCONS_gene_a;consensus_digest=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+chr2	PloidyPatchConsensus	mRNA	101	190	.	+	.	ID=PPCONS_tx_a;Parent=PPCONS_gene_a
+chr2	PloidyPatchConsensus	exon	101	190	.	+	.	ID=PPCONS_exon_a;Parent=PPCONS_tx_a
+chr2	PloidyPatchConsensus	CDS	101	190	.	+	0	Parent=PPCONS_tx_a
+chr2	PloidyPatchConsensus	gene	151	240	.	+	.	ID=PPCONS_gene_b;consensus_digest=bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+chr2	PloidyPatchConsensus	mRNA	151	240	.	+	.	ID=PPCONS_tx_b;Parent=PPCONS_gene_b
+chr2	PloidyPatchConsensus	exon	151	240	.	+	.	ID=PPCONS_exon_b;Parent=PPCONS_tx_b
+chr2	PloidyPatchConsensus	CDS	151	240	.	+	0	Parent=PPCONS_tx_b
+chr3	PloidyPatchConsensus	gene	301	390	.	-	.	ID=PPCONS_gene_c;consensus_digest=cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+chr3	PloidyPatchConsensus	mRNA	301	390	.	-	.	ID=PPCONS_tx_c;Parent=PPCONS_gene_c
+chr3	PloidyPatchConsensus	exon	301	390	.	-	.	ID=PPCONS_exon_c;Parent=PPCONS_tx_c
+chr3	PloidyPatchConsensus	CDS	301	390	.	-	0	Parent=PPCONS_tx_c

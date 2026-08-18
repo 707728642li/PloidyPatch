@@ -1,0 +1,5 @@
+##gff-version 3
+chr1	ExampleBase	gene	1	90	.	+	.	ID=BASE_gene_1
+chr1	ExampleBase	mRNA	1	90	.	+	.	ID=BASE_tx_1;Parent=BASE_gene_1
+chr1	ExampleBase	exon	1	90	.	+	.	ID=BASE_exon_1;Parent=BASE_tx_1
+chr1	ExampleBase	CDS	1	90	.	+	0	Parent=BASE_tx_1

@@ -1,0 +1,11 @@
+{
+  "schema_version": "ploidypatch.no_ranker_h1.v0.8",
+  "model_version": "none_core_H1_only_v0.8",
+  "ranker_enabled": false,
+  "h2_or_topology_ranking_enabled": false,
+  "primary_hypothesis": "H1_retain_distinct_vs_suppress_overlap_only",
+  "retired_ranker": "ploidypatch.stable_reference_ranker.v0.9",
+  "retirement_status": "retire_v09_ranker_keep_chain_workflow",
+  "automatic_approval": false,
+  "truth_access": false
+}
