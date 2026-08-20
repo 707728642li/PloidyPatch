@@ -6,6 +6,7 @@
   <a href="https://github.com/707728642li/PloidyPatch/actions/workflows/test.yml"><img alt="Tests" src="https://github.com/707728642li/PloidyPatch/actions/workflows/test.yml/badge.svg"></a>
   <a href="https://github.com/707728642li/PloidyPatch/releases/tag/v1.0"><img alt="Release v1.0" src="https://img.shields.io/badge/release-v1.0-176a4d"></a>
   <a href="https://pypi.org/project/ploidypatch/"><img alt="PyPI" src="https://img.shields.io/pypi/v/ploidypatch?label=PyPI"></a>
+  <a href="https://anaconda.org/bioconda/ploidypatch"><img alt="Bioconda" src="https://anaconda.org/bioconda/ploidypatch/badges/version.svg"></a>
   <a href="https://zenodo.org/records/21875561"><img alt="Zenodo v1.0 DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.21875561.svg"></a>
   <a href="LICENSE"><img alt="BSD-3-Clause license" src="https://img.shields.io/badge/license-BSD--3--Clause-d7a93b"></a>
   <img alt="Python 3.11–3.13" src="https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-3776ab">
@@ -55,10 +56,36 @@ python -m pip install ploidypatch==1.0.0
 
 ### Conda / Bioconda
 
-The release includes a tested noarch Conda package and a Bioconda-ready recipe
-bound to the same v1.0 registry source archive (`1.0.0`). The package can be installed
-directly from the immutable GitHub release while the Bioconda recipe completes
-community review:
+PloidyPatch 1.0.0 is available from the
+[Bioconda channel](https://anaconda.org/bioconda/ploidypatch) as a
+platform-independent `noarch` Python package. We recommend a dedicated
+environment:
+
+```bash
+mamba create -n ploidypatch \
+  -c conda-forge -c bioconda \
+  --strict-channel-priority \
+  ploidypatch=1.0.0
+conda activate ploidypatch
+ploidypatch --version
+```
+
+`conda` can be used in place of `mamba`. To install into an existing
+compatible environment:
+
+```bash
+conda install -c conda-forge -c bioconda \
+  --strict-channel-priority \
+  ploidypatch=1.0.0
+```
+
+The channel package is built from the immutable v1.0 release and is tested on
+Python 3.11 or later. Research-evaluation and visualization features remain
+optional; see the [installation guide](docs/INSTALLATION.md) for their
+dependency groups and for separately managed projection and synteny programs.
+
+For checksum-bound archival reproduction, the GitHub release also provides the
+same core as a standalone Conda artifact:
 
 ```bash
 conda create -n ploidypatch python=3.11
@@ -66,13 +93,7 @@ conda install -n ploidypatch \
   https://github.com/707728642li/PloidyPatch/releases/download/v1.0/ploidypatch-1.0.0-py_0.conda
 ```
 
-After the community recipe is merged, the equivalent channel installation is:
-
-```bash
-conda install -c conda-forge -c bioconda ploidypatch=1.0.0
-```
-
-Alternatively, create an isolated environment and install the tagged source:
+Alternatively, install the tagged source in an isolated environment:
 
 ```bash
 conda create -n ploidypatch -c conda-forge python=3.11 pip
