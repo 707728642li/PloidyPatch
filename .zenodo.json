@@ -1,0 +1,25 @@
+{
+  "title": "PloidyPatch",
+  "upload_type": "software",
+  "description": "A duplication-aware, review-oriented toolkit for preserving, ranking, and applying structurally distinct plant gene-model repair candidates as auditable and reversible annotation patches.",
+  "creators": [
+    {
+      "name": "Li, Taishan",
+      "affiliation": "Chinese Academy of Forestry"
+    },
+    {
+      "name": "Du, Gaigai",
+      "affiliation": "Chinese Academy of Forestry"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "access_right": "open",
+  "keywords": [
+    "plant genomics",
+    "genome annotation",
+    "polyploidy",
+    "whole-genome duplication",
+    "gene-model repair",
+    "synteny"
+  ]
+}
