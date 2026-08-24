@@ -1,7 +1,8 @@
 # Bioconda submission
 
 PloidyPatch `1.0.0` is published and installable from the Bioconda channel.
-This directory retains the channel recipe and its release-bound checksum. The local recipe
+This directory contains the `1.0.1` metadata-correction update, bound to the
+immutable `v1.0.1` source release. The local recipe
 at `packaging/conda/meta.yaml` uses the current checkout for pre-release
 validation; `packaging/bioconda/meta.yaml` is prepared for the immutable v1.0
 GitHub release source distribution and its canonical SHA-256 digest. The
@@ -18,4 +19,5 @@ Update procedure for a later patch release:
 The repository CI and `tests/test_v1_release_package.py` verify the published
 recipe's version, license, entry point, maintainer and immutable source hash.
 Availability claims are made only after the external channel exposes the
-package; that verification has been completed for `1.0.0`.
+package; that verification has been completed for `1.0.0`, while `1.0.1`
+remains an update candidate until the channel build is visible.

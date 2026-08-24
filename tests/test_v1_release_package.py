@@ -148,8 +148,8 @@ def test_conda_recipes_cover_local_example_and_container_safe_smoke() -> None:
     assert "scikit-learn" not in recipe
 
     bioconda = (ROOT / "packaging/bioconda/meta.yaml").read_text(encoding="utf-8")
-    assert '{% set version = "1.0.0" %}' in bioconda
-    assert '{% set release_tag = "v1.0" %}' in bioconda
+    assert '{% set version = "1.0.1" %}' in bioconda
+    assert '{% set release_tag = "v1.0.1" %}' in bioconda
     assert "releases/download/{{ release_tag }}" in bioconda
     recipe_hashes = re.findall(r"^\s*sha256:\s*([0-9a-f]{64})\s*$", bioconda, re.MULTILINE)
     assert len(recipe_hashes) == 1
