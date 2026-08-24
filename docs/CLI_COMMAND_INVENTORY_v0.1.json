@@ -99,7 +99,7 @@
     "patch": 6,
     "report": 1
   },
-  "package_version": "1.0.0",
+  "package_version": "1.0.1",
   "parser": "ploidypatch.cli.build_parser",
   "schema_version": "ploidypatch.cli_command_inventory.v1",
   "top_level_families": [

@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/707728642li/PloidyPatch/actions/workflows/test.yml"><img alt="Tests" src="https://github.com/707728642li/PloidyPatch/actions/workflows/test.yml/badge.svg"></a>
-  <a href="https://github.com/707728642li/PloidyPatch/releases/tag/v1.0"><img alt="Release v1.0" src="https://img.shields.io/badge/release-v1.0-176a4d"></a>
+  <a href="https://github.com/707728642li/PloidyPatch/releases/tag/v1.0.1"><img alt="Release v1.0" src="https://img.shields.io/badge/release-v1.0-176a4d"></a>
   <a href="https://pypi.org/project/ploidypatch/"><img alt="PyPI" src="https://img.shields.io/pypi/v/ploidypatch?label=PyPI"></a>
   <a href="https://anaconda.org/bioconda/ploidypatch"><img alt="Bioconda" src="https://anaconda.org/bioconda/ploidypatch/badges/version.svg"></a>
   <a href="https://zenodo.org/records/21875561"><img alt="Zenodo v1.0 DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.21875561.svg"></a>
@@ -51,7 +51,7 @@ PloidyPatch makes that uncertainty explicit and reviewable.
 ### Pip / PyPI
 
 ```bash
-python -m pip install ploidypatch==1.0.0
+python -m pip install ploidypatch==1.0.1
 ```
 
 ### Conda / Bioconda
@@ -84,6 +84,10 @@ Python 3.11 or later. Research-evaluation and visualization features remain
 optional; see the [installation guide](docs/INSTALLATION.md) for their
 dependency groups and for separately managed projection and synteny programs.
 
+PyPI `1.0.1` is a metadata-correction release that records both software
+authors and updates this installation text. It does not change scientific
+methods or command behavior relative to the Bioconda `1.0.0` build.
+
 For checksum-bound archival reproduction, the GitHub release also provides the
 same core as a standalone Conda artifact:
 
@@ -99,7 +103,7 @@ Alternatively, install the tagged source in an isolated environment:
 conda create -n ploidypatch -c conda-forge python=3.11 pip
 conda activate ploidypatch
 python -m pip install \
-  "ploidypatch @ git+https://github.com/707728642li/PloidyPatch.git@v1.0"
+  "ploidypatch @ git+https://github.com/707728642li/PloidyPatch.git@v1.0.1"
 ploidypatch --version
 ```
 
@@ -300,18 +304,20 @@ and checksum-bound examples preserve the complete claim boundary.
 ## Citation
 
 Use GitHub's **Cite this repository** panel or [`CITATION.cff`](CITATION.cff).
-The archived v1.0 software release is available from the stable Zenodo
-[record 21875561](https://zenodo.org/records/21875561), with version DOI
-`10.5281/zenodo.21875561`. Zenodo retains the all-version concept DOI in the
-record metadata. The associated manuscript citation will be added after
-publication without changing the immutable software-release identity.
+The archived PloidyPatch v1.0 software is available from Zenodo under the
+all-version concept DOI `10.5281/zenodo.21875560`. The immutable `1.0.0`
+archive remains [record 21875561](https://zenodo.org/records/21875561), with
+version DOI `10.5281/zenodo.21875561`. The associated manuscript citation will
+be added after publication without changing the software-release identity.
 
 ## License and contact
 
 PloidyPatch is released under the [BSD 3-Clause License](LICENSE).
 
-- Maintainer: **Taishan Li**, Chinese Academy of Forestry
-- Work email: [litaishan@caf.ac.cn](mailto:litaishan@caf.ac.cn)
+- Software authors: **Taishan Li** and **Gaigai Du**, Chinese Academy of Forestry
+- Author contacts: [litaishan@caf.ac.cn](mailto:litaishan@caf.ac.cn) and
+  [gaigaidu@caf.ac.cn](mailto:gaigaidu@caf.ac.cn)
+- Maintainer: **Taishan Li**
 - Bugs and feature requests: [GitHub Issues](https://github.com/707728642li/PloidyPatch/issues)
 
 Please do not send confidential genomes, credentials, or unpublished sample

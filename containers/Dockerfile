@@ -25,7 +25,7 @@ FROM ${BASE_IMAGE} AS runtime
 
 LABEL org.opencontainers.image.title="PloidyPatch core" \
       org.opencontainers.image.description="Review-oriented plant gene-model patch CLI" \
-      org.opencontainers.image.version="1.0.0" \
+      org.opencontainers.image.version="1.0.1" \
       org.opencontainers.image.licenses="BSD-3-Clause" \
       org.opencontainers.image.source="https://github.com/707728642li/PloidyPatch"
 
@@ -41,11 +41,11 @@ RUN groupadd --system --gid 10001 ploidypatch \
     && mkdir -p /work/examples \
     && chown 10001:10001 /work
 
-COPY --from=wheel-builder /wheel/ploidypatch-1.0.0-py3-none-any.whl /tmp/
+COPY --from=wheel-builder /wheel/ploidypatch-1.0.1-py3-none-any.whl /tmp/
 RUN --network=none python -m pip install \
     --no-deps \
-    /tmp/ploidypatch-1.0.0-py3-none-any.whl \
-    && rm /tmp/ploidypatch-1.0.0-py3-none-any.whl
+    /tmp/ploidypatch-1.0.1-py3-none-any.whl \
+    && rm /tmp/ploidypatch-1.0.1-py3-none-any.whl
 
 USER 10001:10001
 WORKDIR /work

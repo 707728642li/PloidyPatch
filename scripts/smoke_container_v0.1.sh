@@ -80,7 +80,7 @@ example = json.loads(Path(example_path).read_text(encoding="utf-8"))
 checks = {
     "runtime_user_is_10001": user == "10001:10001",
     "entrypoint_is_ploidypatch": entrypoint == ["ploidypatch"],
-    "version_is_1_1_0": version == "1.0.0",
+    "version_is_1_1_0": version == "1.0.1",
     "accepted_additions_are_two": example.get("accepted_additions") == 2,
     "automatic_approval_is_false": example.get("automatic_approval") is False,
     "byte_identical_reversion": example.get("byte_identical_reversion") is True,

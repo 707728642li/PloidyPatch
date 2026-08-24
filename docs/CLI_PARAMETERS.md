@@ -1,7 +1,7 @@
 # PloidyPatch v1.0 command and parameter reference
 
 This file is generated from `ploidypatch.cli.build_parser` for package
-version `1.0.0`. It documents 87 executable leaf commands.
+version `1.0.1`. It documents 87 executable leaf commands.
 Do not edit it by hand; run `scripts/export_cli_parameters_v1.py`.
 
 Every output path is non-overwriting unless a command explicitly documents

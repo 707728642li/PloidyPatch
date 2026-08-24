@@ -112,8 +112,8 @@ def test_v03_policy_is_explicit_and_owner_boundary_is_unchanged() -> None:
     assert module.CANONICAL_SDIST_POLICY["mtime"] == "citation_release_date_midnight_utc"
     assert module.CANONICAL_SDIST_POLICY["uid"] == 0
     assert module.CANONICAL_SDIST_POLICY["gzip_filename"] == ""
-    assert module.archive_doi(ROOT) == "10.5281/zenodo.21875561"
-    assert module.source_date_epoch(ROOT) == 1_786_320_000
+    assert module.archive_doi(ROOT) == "10.5281/zenodo.21875560"
+    assert module.source_date_epoch(ROOT) == 1_787_529_600
     source = SCRIPT.read_text(encoding="utf-8")
     assert '"formal_public_release": False' not in source
     assert '"missing_owner_fields_unchanged"' not in source

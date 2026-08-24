@@ -3,6 +3,20 @@
 All notable changes to PloidyPatch are documented here. The project follows
 [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-08-24
+
+Public metadata correction; scientific methods, command behavior, and frozen
+benchmark results are unchanged from PloidyPatch v1.0.
+
+### Changed
+
+- Recorded Taishan Li and Gaigai Du consistently as the software authors in
+  package metadata, `CITATION.cff`, and the public author record.
+- Replaced the obsolete pre-merge Bioconda wording in the PyPI long
+  description with the verified channel installation command.
+- Distinguished the PyPI metadata-correction release (`1.0.1`) from the
+  currently available, algorithmically equivalent Bioconda build (`1.0.0`).
+
 ## [1.0.0] - 2026-08-10
 
 First stable public release.
@@ -34,4 +48,5 @@ First stable public release.
   claim.
 - Source annotations are never modified in place.
 
+[1.0.1]: https://github.com/707728642li/PloidyPatch/releases/tag/v1.0.1
 [1.0.0]: https://github.com/707728642li/PloidyPatch/releases/tag/v1.0

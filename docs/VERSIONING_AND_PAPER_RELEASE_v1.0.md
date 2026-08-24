@@ -2,7 +2,9 @@
 
 The public software, package registries and manuscript use the single product
 identity **PloidyPatch v1.0**. Package registries use the machine-readable
-version `1.0.0`, and the GitHub release family is tagged `v1.0`.
+versions `1.0.0` and `1.0.1`. The `1.0.1` patch corrects public authorship and
+installation metadata without changing the scientific methods or command
+behavior. GitHub uses exact release tags such as `v1.0` and `v1.0.1`.
 
 Identifiers such as `v0.3`, `v0.4`, `v0.5` and `v0.9` in archived protocol,
 schema or evidence paths are immutable scientific provenance identifiers. They
@@ -11,8 +13,9 @@ obscure which preregistered estimator or protocol produced an artifact.
 
 Accordingly:
 
-- the command-line package, container, documentation and registry records use
-  version `1.0.0`;
+- current PyPI, source, container and citation metadata use version `1.0.1`;
+- the available Bioconda `1.0.0` package remains a valid, algorithmically
+  equivalent PloidyPatch v1.0 build while its metadata-only patch propagates;
 - reader-facing text uses **PloidyPatch v1.0**;
 - machine-readable protocol, schema and evidence identifiers retain their
   original immutable values;

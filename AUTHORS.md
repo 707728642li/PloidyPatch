@@ -1,6 +1,16 @@
 # Authors and maintainers
 
-## Project lead and maintainer
+## Software authors
+
+- **Taishan Li** — Chinese Academy of Forestry
+
+  Contact: [litaishan@caf.ac.cn](mailto:litaishan@caf.ac.cn)
+
+- **Gaigai Du** — Chinese Academy of Forestry
+
+  Contact: [gaigaidu@caf.ac.cn](mailto:gaigaidu@caf.ac.cn)
+
+## Maintainer
 
 - **Taishan Li** — Chinese Academy of Forestry
 

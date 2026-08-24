@@ -34,7 +34,7 @@ def test_tracked_cli_inventory_matches_production_parser() -> None:
     assert completed.returncode == 0, completed.stderr
     inventory = json.loads(INVENTORY.read_text(encoding="utf-8"))
     assert inventory["schema_version"] == "ploidypatch.cli_command_inventory.v1"
-    assert inventory["package_version"] == "1.0.0"
+    assert inventory["package_version"] == "1.0.1"
     assert inventory["top_level_families"] == [
         "audit",
         "baseline",

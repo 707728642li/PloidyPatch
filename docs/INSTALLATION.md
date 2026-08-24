@@ -20,14 +20,26 @@ system.
 ## Recommended: Pip / PyPI
 
 ```bash
-python -m pip install ploidypatch==1.0.0
+python -m pip install ploidypatch==1.0.1
 ploidypatch --version
 ```
 
-## Recommended: Conda
+## Recommended: Conda / Bioconda
 
-The tested noarch Conda package can be installed directly from the immutable
-v1.0 release (registry version `1.0.0`):
+PloidyPatch `1.0.0` is available from Bioconda as a tested noarch package:
+
+```bash
+conda create -n ploidypatch \
+  -c conda-forge -c bioconda \
+  --strict-channel-priority \
+  ploidypatch=1.0.0
+conda activate ploidypatch
+ploidypatch --version
+```
+
+The same channel build can be installed into an existing compatible
+environment with `conda install`. For checksum-bound reproduction, the
+standalone Conda artifact remains available from the immutable v1.0 release:
 
 ```bash
 conda create -n ploidypatch python=3.11
@@ -36,14 +48,9 @@ conda install -n ploidypatch \
 conda run -n ploidypatch ploidypatch --version
 ```
 
-After the Bioconda recipe is merged and propagated, the channel form is:
-
-```bash
-conda create -n ploidypatch -c conda-forge -c bioconda ploidypatch=1.0.0
-conda activate ploidypatch
-ploidypatch --version
-ploidypatch --help
-```
+PyPI `1.0.1` only corrects public author and installation metadata; its
+scientific methods and command behavior are unchanged from the Bioconda
+`1.0.0` build.
 
 The tagged source can also be installed with pip inside a Conda environment:
 
@@ -51,7 +58,7 @@ The tagged source can also be installed with pip inside a Conda environment:
 conda create -n ploidypatch -c conda-forge python=3.11 pip
 conda activate ploidypatch
 python -m pip install \
-  "ploidypatch @ git+https://github.com/707728642li/PloidyPatch.git@v1.0"
+  "ploidypatch @ git+https://github.com/707728642li/PloidyPatch.git@v1.0.1"
 ```
 
 ## Optional Python features
@@ -110,7 +117,8 @@ python examples/minimal_reviewed_patch/run_example.py \
   --output-dir work/install-smoke
 ```
 
-Expected version: `1.0.0`. The example must report two accepted additions,
+Expected version: `1.0.1` from PyPI or source, and `1.0.0` from the current
+Bioconda channel build. The example must report two accepted additions,
 `automatic_approval=false`, and `byte_identical_reversion=true`.
 
 ## Troubleshooting

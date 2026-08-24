@@ -12,6 +12,7 @@ from ploidypatch import __version__
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_EMAIL = "litaishan@caf.ac.cn"
+COAUTHOR_EMAIL = "gaigaidu@caf.ac.cn"
 PRIVATE_ACCOUNT_EMAIL = "litaishan910706@gmail.com"
 REPOSITORY = "https://github.com/707728642li/PloidyPatch"
 
@@ -19,8 +20,11 @@ REPOSITORY = "https://github.com/707728642li/PloidyPatch"
 def test_v1_metadata_is_complete_and_consistent() -> None:
     metadata = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
     project = metadata["project"]
-    assert project["version"] == __version__ == "1.0.0"
-    assert project["authors"] == [{"name": "Taishan Li", "email": PUBLIC_EMAIL}]
+    assert project["version"] == __version__ == "1.0.1"
+    assert project["authors"] == [
+        {"name": "Taishan Li", "email": PUBLIC_EMAIL},
+        {"name": "Gaigai Du", "email": COAUTHOR_EMAIL},
+    ]
     assert project["maintainers"] == [{"name": "Taishan Li", "email": PUBLIC_EMAIL}]
     assert project["license"] == "BSD-3-Clause"
     assert project["license-files"] == ["LICENSE"]
@@ -35,11 +39,12 @@ def test_license_citation_and_public_contact_are_release_ready() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     assert "BSD 3-Clause License" in license_text
     assert "Copyright (c) 2026, Taishan Li" in license_text
-    assert 'version: "1.0.0"' in citation
-    assert 'doi: "10.5281/zenodo.21875561"' in citation
+    assert 'version: "1.0.1"' in citation
+    assert 'doi: "10.5281/zenodo.21875560"' in citation
     assert 'license: "BSD-3-Clause"' in citation
     assert f'repository-code: "{REPOSITORY}"' in citation
     assert PUBLIC_EMAIL in citation and PUBLIC_EMAIL in readme
+    assert COAUTHOR_EMAIL in citation and COAUTHOR_EMAIL in readme
     assert "https://zenodo.org/records/21875561" in readme
     assert PRIVATE_ACCOUNT_EMAIL not in citation
     assert PRIVATE_ACCOUNT_EMAIL not in readme
@@ -85,14 +90,15 @@ def test_professional_github_surface_and_user_documentation_exist() -> None:
         "## License and contact",
     ):
         assert section in readme
-    assert "python -m pip install ploidypatch==1.0.0" in readme
-    assert "conda install -c conda-forge -c bioconda ploidypatch=1.0.0" in readme
+    assert "python -m pip install ploidypatch==1.0.1" in readme
+    assert "conda install -c conda-forge -c bioconda" in readme
+    assert "ploidypatch=1.0.0" in readme
     assert "ploidypatch-1.0.0-py_0.conda" in readme
 
 
 def test_release_workflow_uses_pypi_trusted_publishing() -> None:
     workflow = (ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8")
-    assert '"v" + ".".join(v.split(".")[:2])' in workflow
+    assert 'print("v" + v)' in workflow
     assert 'test "${release_tag}" = "${GITHUB_REF_NAME}"' in workflow
     assert "publish-pypi:" in workflow
     assert "id-token: write" in workflow
@@ -119,7 +125,7 @@ def test_generated_parameter_reference_covers_exact_cli_inventory() -> None:
     )
     reference = (ROOT / "docs/CLI_PARAMETERS.md").read_text(encoding="utf-8")
     headings = re.findall(r"^## `ploidypatch (.+)`$", reference, flags=re.MULTILINE)
-    assert inventory["package_version"] == "1.0.0"
+    assert inventory["package_version"] == "1.0.1"
     assert inventory["leaf_command_count"] == 87
     assert headings == inventory["leaf_commands"]
     assert "| Argument | Required | Type | Default | Choices | Description |" in reference
@@ -128,7 +134,7 @@ def test_generated_parameter_reference_covers_exact_cli_inventory() -> None:
 def test_conda_recipes_cover_local_example_and_container_safe_smoke() -> None:
     recipe = (ROOT / "packaging/conda/meta.yaml").read_text(encoding="utf-8")
     for expected in (
-        '{% set version = "1.0.0" %}',
+        '{% set version = "1.0.1" %}',
         "noarch: python",
         "ploidypatch = ploidypatch.cli:main",
         "python >=3.11",

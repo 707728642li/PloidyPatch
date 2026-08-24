@@ -17,7 +17,7 @@ def test_container_uses_digest_pinned_two_stage_offline_build() -> None:
     assert dockerfile.count("RUN --network=none") == 2
     assert "--no-build-isolation" in dockerfile
     assert dockerfile.count("--no-deps") == 2
-    assert dockerfile.count("ploidypatch-1.0.0-py3-none-any.whl") == 3
+    assert dockerfile.count("ploidypatch-1.0.1-py3-none-any.whl") == 3
     assert 'org.opencontainers.image.licenses="BSD-3-Clause"' in dockerfile
     assert "/tmp/ploidypatch.whl" not in dockerfile
     assert "USER 10001:10001" in dockerfile
