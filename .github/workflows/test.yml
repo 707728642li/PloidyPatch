@@ -128,7 +128,7 @@ jobs:
           assert manifest["installed_smoke"]["wheel"]["example_report_state"] == "validated_reversible_run"
           assert manifest["installed_smoke"]["sdist"]["example_report_state"] == "validated_reversible_run"
           assert manifest["release_boundary"]["distribution_metadata_complete"] is True
-          assert manifest["release_boundary"]["archive_doi"] == "10.5281/zenodo.21875561"
+          assert manifest["release_boundary"]["archive_doi"] == "10.5281/zenodo.21875560"
           PY
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
