@@ -64,8 +64,8 @@ def test_readme_installation_preserves_environment_and_release_boundaries() -> N
     assert "conda create -p envs/ploidypatch" in text
     assert 'python -m pip install -e ".[test]"' in text
     assert "does not silently install external gene predictors" in text
-    assert "PloidyPatch 1.0.0 is available" in text
-    assert "metadata-correction release" in text
+    assert "PloidyPatch 1.0.1 is available" in text
+    assert "metadata and distribution updates only" in text
     assert "packaging/conda/meta.yaml" in (
         ROOT / "packaging" / "bioconda" / "README.md"
     ).read_text(encoding="utf-8")

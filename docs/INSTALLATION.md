@@ -26,13 +26,13 @@ ploidypatch --version
 
 ## Recommended: Conda / Bioconda
 
-PloidyPatch `1.0.0` is available from Bioconda as a tested noarch package:
+PloidyPatch `1.0.1` is available from Bioconda as a tested noarch package:
 
 ```bash
 conda create -n ploidypatch \
   -c conda-forge -c bioconda \
   --strict-channel-priority \
-  ploidypatch=1.0.0
+  ploidypatch=1.0.1
 conda activate ploidypatch
 ploidypatch --version
 ```
@@ -48,9 +48,9 @@ conda install -n ploidypatch \
 conda run -n ploidypatch ploidypatch --version
 ```
 
-PyPI `1.0.1` only corrects public author and installation metadata; its
-scientific methods and command behavior are unchanged from the Bioconda
-`1.0.0` build.
+PyPI and Bioconda currently provide PloidyPatch 1.0.1. This release contains
+metadata and distribution updates only and does not change the scientific
+methods or command behavior relative to the archived 1.0.0 release.
 
 The tagged source can also be installed with pip inside a Conda environment:
 
@@ -117,8 +117,8 @@ python examples/minimal_reviewed_patch/run_example.py \
   --output-dir work/install-smoke
 ```
 
-Expected version: `1.0.1` from PyPI or source, and `1.0.0` from the current
-Bioconda channel build. The example must report two accepted additions,
+Expected version: `1.0.1` from PyPI, Bioconda, or the tagged source. The example
+must report two accepted additions,
 `automatic_approval=false`, and `byte_identical_reversion=true`.
 
 ## Troubleshooting

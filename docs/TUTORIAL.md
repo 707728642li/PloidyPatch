@@ -23,8 +23,10 @@ ploidypatch --version
 ploidypatch patch --help
 ```
 
-The expected version is `1.0.1` from PyPI or source, and `1.0.0` from the
-current Bioconda channel build; the difference is release metadata only.
+The expected version is `1.0.1` from PyPI, Bioconda, or the tagged source.
+This release contains metadata and distribution updates only and does not
+change the scientific methods or command behavior relative to the archived
+`1.0.0` release.
 
 ## 2. Understand the example inputs
 

@@ -13,9 +13,9 @@ obscure which preregistered estimator or protocol produced an artifact.
 
 Accordingly:
 
-- current PyPI, source, container and citation metadata use version `1.0.1`;
-- the available Bioconda `1.0.0` package remains a valid, algorithmically
-  equivalent PloidyPatch v1.0 build while its metadata-only patch propagates;
+- current PyPI and Bioconda distribution packages use version `1.0.1`;
+- the manuscript evaluations and the immutable Zenodo archive remain fixed at
+  version `1.0.0`;
 - reader-facing text uses **PloidyPatch v1.0**;
 - machine-readable protocol, schema and evidence identifiers retain their
   original immutable values;
@@ -24,3 +24,7 @@ Accordingly:
 
 This convention separates the public product identity from reproducibility
 metadata without rewriting analysis history.
+
+PyPI and Bioconda currently provide PloidyPatch 1.0.1. This release contains
+metadata and distribution updates only and does not change the scientific
+methods or command behavior relative to the archived 1.0.0 release.

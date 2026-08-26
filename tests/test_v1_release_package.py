@@ -92,7 +92,7 @@ def test_professional_github_surface_and_user_documentation_exist() -> None:
         assert section in readme
     assert "python -m pip install ploidypatch==1.0.1" in readme
     assert "conda install -c conda-forge -c bioconda" in readme
-    assert "ploidypatch=1.0.0" in readme
+    assert "ploidypatch=1.0.1" in readme
     assert "ploidypatch-1.0.0-py_0.conda" in readme
 
 

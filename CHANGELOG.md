@@ -14,8 +14,9 @@ benchmark results are unchanged from PloidyPatch v1.0.
   package metadata, `CITATION.cff`, and the public author record.
 - Replaced the obsolete pre-merge Bioconda wording in the PyPI long
   description with the verified channel installation command.
-- Distinguished the PyPI metadata-correction release (`1.0.1`) from the
-  currently available, algorithmically equivalent Bioconda build (`1.0.0`).
+- PyPI and Bioconda currently provide PloidyPatch 1.0.1. This release contains
+  metadata and distribution updates only and does not change the scientific
+  methods or command behavior relative to the archived 1.0.0 release.
 
 ## [1.0.0] - 2026-08-10
 

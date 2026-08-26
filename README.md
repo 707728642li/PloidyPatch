@@ -56,7 +56,7 @@ python -m pip install ploidypatch==1.0.1
 
 ### Conda / Bioconda
 
-PloidyPatch 1.0.0 is available from the
+PloidyPatch 1.0.1 is available from the
 [Bioconda channel](https://anaconda.org/bioconda/ploidypatch) as a
 platform-independent `noarch` Python package. We recommend a dedicated
 environment:
@@ -65,7 +65,7 @@ environment:
 mamba create -n ploidypatch \
   -c conda-forge -c bioconda \
   --strict-channel-priority \
-  ploidypatch=1.0.0
+  ploidypatch=1.0.1
 conda activate ploidypatch
 ploidypatch --version
 ```
@@ -76,7 +76,7 @@ compatible environment:
 ```bash
 conda install -c conda-forge -c bioconda \
   --strict-channel-priority \
-  ploidypatch=1.0.0
+  ploidypatch=1.0.1
 ```
 
 The channel package is built from the immutable v1.0 release and is tested on
@@ -84,9 +84,9 @@ Python 3.11 or later. Research-evaluation and visualization features remain
 optional; see the [installation guide](docs/INSTALLATION.md) for their
 dependency groups and for separately managed projection and synteny programs.
 
-PyPI `1.0.1` is a metadata-correction release that records both software
-authors and updates this installation text. It does not change scientific
-methods or command behavior relative to the Bioconda `1.0.0` build.
+PyPI and Bioconda currently provide PloidyPatch 1.0.1. This release contains
+metadata and distribution updates only and does not change the scientific
+methods or command behavior relative to the archived 1.0.0 release.
 
 For checksum-bound archival reproduction, the GitHub release also provides the
 same core as a standalone Conda artifact:
